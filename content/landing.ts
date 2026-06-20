@@ -50,6 +50,10 @@ export const landing = {
         href: "#association"
       }
     },
+    video: {
+      title: "Présentation du Heiven Cercle Pro",
+      youtubeId: "evIQnAMsPjE"
+    },
     visualImages: [
       { src: "/assets/expert-garence-nageon.jpg", alt: "Portrait d'une experte Heiven" },
       { src: "/assets/expert-gerard-garofalo.jpg", alt: "Portrait d'un expert Heiven" },
