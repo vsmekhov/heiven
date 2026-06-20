@@ -371,13 +371,12 @@ export const landing = {
       {
         title: "MEMBRE FONDATEUR - à l'année",
         price:
-          "1 000 € (praticiens de santé) - 2 000 € (médecins)\nsoit 2 mois offerts - payable en 1, 2 ou 3 fois",
+          "1 000 € (praticiens de santé) - 2 000 € (médecins)\nsoit 2 mois offerts",
         points: [
           "Tout ce que comprend l'abonnement Essentiel, plus les avantages réservés aux fondateurs du Cercle.",
           "2 mois offerts sur l'année",
           "Placement prioritaire : vos publications passent en premier quand plusieurs membres publient le même jour",
           "Tarif fondateur garanti pour toute la durée de votre abonnement",
-          "Paiement en 1, 2 ou 3 fois, selon ce qui vous arrange"
         ],
         cta: {
           label: "Devenir Membre Fondateur",
