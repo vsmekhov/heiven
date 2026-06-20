@@ -20,14 +20,18 @@ const problemHighlights = [
   ["une plateforme qui existe déjà, et une audience qui vous attend."]
 ];
 
-const costHighlights = [
-  [],
-  ["entre 120 et 600 euros de manque à gagner", "Des créneaux qui ne reviennent jamais."],
-  ["Ce sont des centaines, parfois des milliers d'euros qui disparaissent silencieusement de votre activité."],
-  ["Une expertise qui grandit chaque année, mais que trop peu de patients voient."],
-  ["la sortir de là."],
-  ["Et elle ne vous trouve pas."],
-  ["double perte. Pour elle, sa santé. Pour vous, votre activité."]
+const costBlocks = [
+  "Combien vous coûte chaque semaine d'invisibilité ? Faites ce calcul une seule fois.",
+  "Commencez par le plus visible. Deux créneaux de consultation non remplis dans votre semaine, c'est <strong>entre 120 et 600 euros de manque à gagner</strong>, selon votre métier et votre spécialité. Chaque semaine. <strong>Des créneaux qui ne reviennent jamais.</strong>",
+  "Mais le calcul réel va plus loin. Une patiente ou un patient n'est pas une seule consultation. C'est une consultation initiale, puis une consultation de débrief après un bilan, suivie d'un premier protocole. Puis des consultations régulières, tous les six mois, tous les ans, pendant des années.",
+  "Certains de vos confrères - ou vous peut-être - proposent des programmes d'accompagnement de trois ou six mois, entre 300 et 2 000 euros, parfois plus.",
+  "Chaque patient qui ne vous trouve pas, ce ne sont donc pas 60, 90, 150 ou 300 euros perdus. <strong>Ce sont des centaines, parfois des milliers d'euros qui disparaissent silencieusement de votre activité.</strong>",
+  "Et pendant ce temps, vous continuez à investir de l'argent et du temps. Souvent le soir ou pendant le week-end. Parfois, vous prenez du temps sur vos journées de consultation. Des formations, des congrès, des certifications. Dans notre milieu, on se forme en permanence. <strong>Une expertise qui grandit chaque année, mais que trop peu de patients voient.</strong>",
+  "Il y a pourtant une perte plus grave que toutes les autres.",
+  "Quelque part, une personne en souffrance, en errance médicale depuis des mois ou des années, vous cherche. Elle a consulté plusieurs médecins. Elle n'a pas trouvé de réponses. Elle cherche un praticien qui prendra le temps nécessaire pour explorer son terrain, trouver les causes profondes et <strong>la sortir de là.</strong>",
+  "Elle cherche exactement un expert comme vous.",
+  "<strong>Et elle ne vous trouve pas.</strong>",
+  "Chaque jour sans visibilité est une <strong>double perte. Pour elle, sa santé. Pour vous, votre activité.</strong>"
 ];
 ---
 
@@ -52,12 +56,12 @@ const costHighlights = [
       <article class="story-panel">
         <h3>{problem.costTitle}</h3>
         <div class="problem-copy-block">
-        {problem.costParagraphs.map((paragraph, index) => (
-          <p
-            class={index === 0 ? "section-intro lead-paragraph" : "section-intro"}
-            set:html={emphasize(paragraph, costHighlights[index] ?? [])}
-          ></p>
-        ))}
+          {problem.costParagraphs.map((paragraph, index) => (
+            <p
+              class={index === 0 ? "section-intro lead-paragraph" : "section-intro"}
+              set:html={costBlocks[index] ?? paragraph}
+            ></p>
+          ))}
         </div>
       </article>
 
