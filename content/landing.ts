@@ -177,25 +177,31 @@ export const landing = {
       "Sur Heiven, vous ne publiez pas seul dans votre coin.",
       "Les membres du Heiven Cercle Pro publient sur les mêmes plateformes que les références absolues de la santé fonctionnelle francophone."
     ],
-    associationList: [
-      "Professeur Vincenzo Castronovo",
-      "Professeur Philippe Humbert",
-      "Dr Amin Gasmi",
-      "Christian Boyer",
-      "Dr Stéphane Résimont",
-      "Dr Aurélien Nunez",
-      "Dr Michel Mouly",
-      "Dr Georges Mouton",
-      "Dr Gérard Garofalo",
-      "Dr Laurent Fogel",
-      "Rivka Dépaz",
-      "Dr Riadh Caid-Essebsi",
-      "Dr Butnaru",
-      "Clara Materne",
-      "Christian Vélot",
-      "Dr Denys Coester",
-      "Dr Guénolé Addor",
-      "Camille Hermann..."
+    // Mur d'images : portraits + noms uniquement (pas de spécialités).
+    // Laisser `image` vide pour afficher un placeholder (initiales) en attendant le portrait.
+    associationPeople: [
+      { name: "Dr Gérard Garofalo", image: "/assets/expert-gerard-garofalo.jpg", alt: "Portrait du Dr Gérard Garofalo" },
+      { name: "Dr Laurent Fogel", image: "/assets/expert-laurent-fogel.jpg", alt: "Portrait du Dr Laurent Fogel" },
+      { name: "Dr Amin Gasmi", image: "/assets/expert-amin-gasmi.jpg", alt: "Portrait du Dr Amin Gasmi" },
+      { name: "Christian Boyer", image: "/assets/expert-christian-boyer.jpg", alt: "Portrait de Christian Boyer" },
+      { name: "Dr Jenny Becam", image: "/assets/expert-jenny-becam.jpg", alt: "Portrait du Dr Jenny Becam" },
+      { name: "Julie Pradines", image: "/assets/expert-julie-pradines.avif", alt: "Portrait de Julie Pradines" },
+      { name: "Dr Alain Butnaru", image: "/assets/expert-alain-butnaru.jpg", alt: "Portrait du Dr Alain Butnaru" },
+      { name: "Dr Aurélien Nunez", image: "/assets/expert-dr-nunez.jpg", alt: "Portrait du Dr Aurélien Nunez" },
+      { name: "Garence Nageon", image: "/assets/expert-garence-nageon.jpg", alt: "Portrait de Garence Nageon" },
+      { name: "Isabelle Meurgey", image: "/assets/expert-isabelle-meurgey.jpg", alt: "Portrait d'Isabelle Meurgey" },
+      { name: "Professeur Vincenzo Castronovo", image: "", alt: "Portrait du Professeur Vincenzo Castronovo" },
+      { name: "Professeur Philippe Humbert", image: "", alt: "Portrait du Professeur Philippe Humbert" },
+      { name: "Dr Stéphane Résimont", image: "", alt: "Portrait du Dr Stéphane Résimont" },
+      { name: "Dr Michel Mouly", image: "", alt: "Portrait du Dr Michel Mouly" },
+      { name: "Dr Georges Mouton", image: "", alt: "Portrait du Dr Georges Mouton" },
+      { name: "Rivka Dépaz", image: "", alt: "Portrait de Rivka Dépaz" },
+      { name: "Dr Riadh Caid-Essebsi", image: "", alt: "Portrait du Dr Riadh Caid-Essebsi" },
+      { name: "Clara Materne", image: "", alt: "Portrait de Clara Materne" },
+      { name: "Christian Vélot", image: "", alt: "Portrait de Christian Vélot" },
+      { name: "Dr Denys Coester", image: "", alt: "Portrait du Dr Denys Coester" },
+      { name: "Dr Guénolé Addor", image: "", alt: "Portrait du Dr Guénolé Addor" },
+      { name: "Camille Hermann", image: "", alt: "Portrait de Camille Hermann" }
     ],
     featuredPeople: [
       {
