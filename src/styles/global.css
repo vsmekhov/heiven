@@ -349,7 +349,8 @@ h3 {
 
 .hero-title {
   display: grid;
-  gap: 14px;
+  gap: 6px;
+  line-height: 0.95;
 }
 
 .hero-title-line {
@@ -361,11 +362,12 @@ h3 {
   justify-content: center;
   justify-self: center;
   width: fit-content;
+  margin-block: -2px;
   opacity: 0.95;
 }
 
 .hero-title-divider img {
-  width: clamp(128px, 39vw, 170px);
+  width: clamp(96px, 26vw, 132px);
   height: auto;
 }
 
