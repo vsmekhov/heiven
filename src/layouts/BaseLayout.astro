@@ -1,0 +1,31 @@
+---
+import "../styles/global.css";
+import { landing } from "../../content/landing";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = landing.site.title,
+  description = landing.site.description
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang={landing.site.locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#111615" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

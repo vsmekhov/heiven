@@ -1,0 +1,138 @@
+---
+import Icon from "./Icon.astro";
+import { landing } from "../../content/landing";
+
+const { pricing } = landing;
+const isExternal = (href: string) => href.startsWith("http");
+---
+
+<section class="section section-accent" id="offre" aria-labelledby="pricing-title">
+  <div class="section-inner pricing-layout">
+    <div class="section-copy">
+      <p class="eyebrow">Investissement</p>
+      <h2 id="pricing-title">{pricing.roiTitle}</h2>
+      <div class="problem-copy-block">
+        {pricing.roiParagraphs.map((paragraph) => (
+          <p class="section-intro">{paragraph}</p>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="section-inner">
+    <div class="committee-layout">
+      <div class="section-copy">
+        <h3>{pricing.committeeTitle}</h3>
+        <div class="problem-copy-block">
+          {pricing.committeeParagraphs.map((paragraph) => (
+            <p class="section-intro">{paragraph}</p>
+          ))}
+        </div>
+        <ul class="name-list">
+          {pricing.committeeMembers.map((name) => (
+            <li>{name}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="expert-grid committee-grid">
+        {pricing.committeeGallery.map((member) => (
+          <article class="expert-card committee-card">
+            <img src={member.image} alt={member.alt} loading="lazy" decoding="async" />
+            <div>
+              <h3>{member.name}</h3>
+              <p>{member.role}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="section-inner">
+    <div class="access-panel">
+      <div class="section-copy">
+        <h3>{pricing.accessTitle}</h3>
+        <div class="problem-copy-block">
+          {pricing.accessParagraphs.map((paragraph) => (
+            <p class="section-intro">{paragraph}</p>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-inner">
+    <div class="section-copy">
+      <p class="eyebrow">Tarifs</p>
+      <h3>{pricing.offerTitle}</h3>
+      <p class="section-intro">{pricing.offerIntro}</p>
+    </div>
+    <div class="plan-grid">
+      {pricing.plans.map((plan) => (
+        <article class="pricing-plan">
+          <h4>{plan.title}</h4>
+          <p class="pricing-price">{plan.price}</p>
+          <ul class="feature-list">
+            {plan.points.map((item) => (
+              <li>
+                <Icon name="CircleCheck" class="list-icon" size={16} />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <a
+            class="button button-primary"
+            href={plan.cta.href}
+            target={isExternal(plan.cta.href) ? "_blank" : undefined}
+            rel={isExternal(plan.cta.href) ? "noreferrer" : undefined}
+          >
+            {plan.cta.label}
+            <Icon name="ArrowRight" class="button-icon" size={16} />
+          </a>
+        </article>
+      ))}
+    </div>
+    <p class="section-intro pricing-note">{pricing.pricingNote}</p>
+  </div>
+
+  <div class="section-inner">
+    <div class="section-copy">
+      <h3>{pricing.trustTitle}</h3>
+      <div class="problem-copy-block">
+        {pricing.trustParagraphs.map((paragraph) => (
+          <p class="section-intro">{paragraph}</p>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="section-inner">
+    <div class="section-copy">
+      <h3>{pricing.urgencyTitle}</h3>
+      <div class="problem-copy-block">
+        {pricing.urgencyParagraphs.map((paragraph) => (
+          <p class="section-intro">{paragraph}</p>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="section-inner">
+    {pricing.ctas.length ? (
+      <div class="section-actions">
+        {pricing.ctas.map((action) => (
+          <a
+            class="button button-primary"
+            href={action.href}
+            target={isExternal(action.href) ? "_blank" : undefined}
+            rel={isExternal(action.href) ? "noreferrer" : undefined}
+          >
+            {action.label}
+            <Icon name="ArrowRight" class="button-icon" size={16} />
+          </a>
+        ))}
+      </div>
+    ) : null}
+  </div>
+</section>

@@ -1,0 +1,45 @@
+---
+import Icon from "./Icon.astro";
+import { landing } from "../../content/landing";
+
+const { faq } = landing;
+
+const actions = faq.ctas ?? [];
+const isExternal = (href: string) => href.startsWith("http");
+---
+
+<section class="section section-light" id="faq" aria-labelledby="faq-title">
+  <div class="section-inner faq-layout">
+    <div class="section-copy">
+      <h2 id="faq-title">{faq.title}</h2>
+    </div>
+
+    <div class="faq-list">
+      {faq.items.map((item) => (
+        <details>
+          <summary>
+            <Icon name="HelpCircle" class="summary-icon" size={18} />
+            <span>{item.question}</span>
+          </summary>
+          <p>{item.answer}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+
+  {actions.length ? (
+    <div class="section-inner section-actions">
+      {actions.map((action) => (
+        <a
+          class="button button-primary"
+          href={action.href}
+          target={isExternal(action.href) ? "_blank" : undefined}
+          rel={isExternal(action.href) ? "noreferrer" : undefined}
+        >
+          {action.label}
+          <Icon name="ArrowRight" class="button-icon" size={17} />
+        </a>
+      ))}
+    </div>
+  ) : null}
+</section>

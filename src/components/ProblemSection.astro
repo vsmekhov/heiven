@@ -1,0 +1,44 @@
+---
+import Icon from "./Icon.astro";
+import { landing } from "../../content/landing";
+
+const { problem } = landing;
+
+const actions = problem.ctas ?? [];
+const isExternal = (href: string) => href.startsWith("http");
+---
+
+<section class="section section-light" id="probleme" aria-labelledby="problem-title">
+  <div class="section-inner">
+    <div class="section-copy">
+      {problem.eyebrow ? <p class="eyebrow">{problem.eyebrow}</p> : null}
+      <h2 id="problem-title">{problem.title}</h2>
+      <div class="problem-copy-block">
+        {problem.paragraphs.map((paragraph) => (
+          <p class="section-intro">{paragraph}</p>
+        ))}
+      </div>
+      <h3>{problem.costTitle}</h3>
+      <div class="problem-copy-block">
+        {problem.costParagraphs.map((paragraph) => (
+          <p class="section-intro">{paragraph}</p>
+        ))}
+      </div>
+      {actions.length ? (
+        <div class="section-actions">
+          {actions.map((cta) => (
+            <a
+              class="button button-primary"
+              href={cta.href}
+              target={isExternal(cta.href) ? "_blank" : undefined}
+              rel={isExternal(cta.href) ? "noreferrer" : undefined}
+            >
+              {cta.label}
+              <Icon name="ArrowRight" class="button-icon" size={16} />
+            </a>
+          ))}
+        </div>
+      ) : null}
+    </div>
+  </div>
+</section>

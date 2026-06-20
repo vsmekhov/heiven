@@ -1,0 +1,48 @@
+---
+import Icon from "./Icon.astro";
+import { landing } from "../../content/landing";
+
+const { inclusions } = landing;
+
+const actions = inclusions.ctas ?? [];
+const isExternal = (href: string) => href.startsWith("http");
+---
+
+<section class="section section-light" id="inclusions" aria-labelledby="inclusions-title">
+  <div class="section-inner">
+    <div class="section-heading">
+      <p class="eyebrow">Ce que vous recevez</p>
+      <h2 id="inclusions-title">{inclusions.title}</h2>
+      <div class="problem-copy-block">
+        {inclusions.paragraphs.map((paragraph) => (
+          <p class="section-intro">{paragraph}</p>
+        ))}
+      </div>
+    </div>
+
+    <div class="inclusion-grid">
+      {inclusions.points.map((point) => (
+        <article class="text-card inclusion-card">
+          <Icon name="CircleCheck" class="card-icon" />
+          <p>{point}</p>
+        </article>
+      ))}
+    </div>
+
+    {actions.length ? (
+      <div class="section-actions">
+        {actions.map((action) => (
+          <a
+            class="button button-primary"
+            href={action.href}
+            target={isExternal(action.href) ? "_blank" : undefined}
+            rel={isExternal(action.href) ? "noreferrer" : undefined}
+          >
+            {action.label}
+            <Icon name="ArrowRight" class="button-icon" size={16} />
+          </a>
+        ))}
+      </div>
+    ) : null}
+  </div>
+</section>

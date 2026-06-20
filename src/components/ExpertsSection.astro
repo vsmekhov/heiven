@@ -1,0 +1,85 @@
+---
+import Icon from "./Icon.astro";
+import { landing } from "../../content/landing";
+
+const { experts } = landing;
+
+const actions = experts.ctas ?? [];
+const isExternal = (href: string) => href.startsWith("http");
+---
+
+<section class="section section-dark" id="association" aria-labelledby="experts-title">
+  <div class="section-inner">
+    <div class="experts-hero">
+      <div class="section-heading experts-heading">
+        <p class="eyebrow">Preuve communautaire</p>
+        <h2 id="experts-title">{experts.associationTitle}</h2>
+        <div class="problem-copy-block">
+          {experts.associationParagraphs.map((paragraph) => (
+            <p class="section-intro">{paragraph}</p>
+          ))}
+        </div>
+      </div>
+
+      <div class="expert-grid association-grid">
+        {experts.featuredPeople.map((person) => (
+          <article class="expert-card">
+            <img src={person.image} alt={person.alt} loading="lazy" decoding="async" />
+            <div>
+              <h3>{person.name}</h3>
+              <p>{person.role}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+
+    <div class="name-grid">
+      {experts.associationList.map((person) => (
+        <p class="name-item">{person}</p>
+      ))}
+    </div>
+
+    <p class="section-intro expert-note">{experts.associationImageNote}</p>
+
+    <div class="section-copy">
+      <h3>{experts.testimonialsTitle}</h3>
+      <p class="section-intro">{experts.testimonialsLead}</p>
+      <div class="name-grid testimonials-list">
+        {experts.testimonialsItems.map((item) => (
+          <article class="quote-card">
+            <p>{item}</p>
+          </article>
+        ))}
+      </div>
+      <p class="section-intro">{experts.testimonialNote}</p>
+      <div class="expert-grid collaboration-grid">
+        {experts.featuredPeople.slice(0, 3).map((person) => (
+          <article class="expert-card collaboration-card">
+            <img src={person.image} alt={person.alt} loading="lazy" decoding="async" />
+            <div>
+              <h3>{person.name}</h3>
+              <p>Collaboration publiée sur Heiven</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+
+    {actions.length ? (
+      <div class="section-actions">
+        {actions.map((action) => (
+          <a
+            class="button button-primary"
+            href={action.href}
+            target={isExternal(action.href) ? "_blank" : undefined}
+            rel={isExternal(action.href) ? "noreferrer" : undefined}
+          >
+            {action.label}
+            <Icon name="ArrowRight" class="button-icon" size={16} />
+          </a>
+        ))}
+      </div>
+    ) : null}
+  </div>
+</section>

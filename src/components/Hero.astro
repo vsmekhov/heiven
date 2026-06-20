@@ -1,0 +1,58 @@
+---
+import Icon from "./Icon.astro";
+import { landing } from "../../content/landing";
+
+const { brand, nav, cta, hero } = landing;
+
+const isExternal = (href: string) => href.startsWith("http");
+---
+
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero-background" aria-hidden="true">
+    {hero.visualImages.map((image) => (
+      <img src={image.src} alt="" loading="eager" decoding="async" />
+    ))}
+  </div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand-link" href="#top" aria-label={brand.name}>
+      <img src={brand.logo.src} alt={brand.logo.alt} width="220" height="89" />
+    </a>
+    <nav class="site-nav" aria-label={nav.ariaLabel}>
+      {nav.links.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+    <a class="button button-ghost header-button" href={cta.primary.href} target="_blank" rel="noreferrer" aria-label={cta.primary.ariaLabel}>
+      Candidature
+      <Icon name="ArrowRight" class="button-icon" size={16} />
+    </a>
+  </header>
+
+  <div class="section-inner hero-inner">
+    <div class="hero-copy">
+      <h1 id="hero-title">{hero.title}</h1>
+      <Icon name="TrendingUp" class="hero-mark" size={18} />
+      <p class="hero-subtitle">{hero.subtitle}</p>
+      <div class="hero-actions">
+        <a
+          class="button button-primary"
+          href={hero.cta.primary.href}
+          target={isExternal(hero.cta.primary.href) ? "_blank" : undefined}
+          rel={isExternal(hero.cta.primary.href) ? "noreferrer" : undefined}
+          aria-label={hero.cta.primary.ariaLabel}
+        >
+          {hero.cta.primary.label}
+          <Icon name="ArrowRight" class="button-icon" size={17} />
+        </a>
+        <a
+          class="button button-secondary"
+          href={hero.cta.secondary.href}
+        >
+          <Icon name="Route" class="button-icon" size={17} />
+          {hero.cta.secondary.label}
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>

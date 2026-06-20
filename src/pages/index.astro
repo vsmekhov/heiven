@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import ProblemSection from "../components/ProblemSection.astro";
+import SolutionSection from "../components/SolutionSection.astro";
+import InclusionsSection from "../components/InclusionsSection.astro";
+import ExpertsSection from "../components/ExpertsSection.astro";
+import PricingSection from "../components/PricingSection.astro";
+import FAQSection from "../components/FAQSection.astro";
+import FinalCTA from "../components/FinalCTA.astro";
+import { landing } from "../../content/landing";
+---
+
+<BaseLayout title={landing.site.title} description={landing.site.description}>
+  <Hero />
+  <main>
+    <ProblemSection />
+    <SolutionSection />
+    <InclusionsSection />
+    <ExpertsSection />
+    <PricingSection />
+    <FAQSection />
+    <FinalCTA />
+  </main>
+</BaseLayout>
