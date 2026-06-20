@@ -6,12 +6,6 @@ import { emphasize } from "../utils/richText";
 const { brand, nav, cta, hero } = landing;
 
 const isExternal = (href: string) => href.startsWith("http");
-
-const headlineText = hero.title;
-const lineBreakIndex = headlineText.indexOf(". ");
-const headlineLine1 =
-  lineBreakIndex !== -1 ? `${headlineText.slice(0, lineBreakIndex + 1)}` : headlineText;
-const headlineLine2 = lineBreakIndex !== -1 ? headlineText.slice(lineBreakIndex + 2) : "";
 ---
 
 <section class="hero" id="top" aria-labelledby="hero-title">
@@ -37,13 +31,7 @@ const headlineLine2 = lineBreakIndex !== -1 ? headlineText.slice(lineBreakIndex 
 
   <div class="section-inner hero-inner">
     <div class="hero-copy">
-      <h1 id="hero-title" class="hero-title">
-        <span class="hero-title-line hero-title-line-1">{headlineLine1}</span>
-        <span class="hero-title-divider" aria-hidden="true">
-          <img src={brand.logo.src} alt="Logo Heiven" width="210" height="85" />
-        </span>
-        {headlineLine2 ? <span class="hero-title-line hero-title-line-2">{headlineLine2}</span> : null}
-      </h1>
+      <h1 id="hero-title">{hero.title}</h1>
       <aside class="hero-video-card" aria-label={hero.video.title}>
         <div class="hero-video-frame">
           <iframe

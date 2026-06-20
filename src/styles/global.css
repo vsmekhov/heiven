@@ -347,30 +347,6 @@ h3 {
   order: 1;
 }
 
-.hero-title {
-  display: grid;
-  gap: 6px;
-  line-height: 0.95;
-}
-
-.hero-title-line {
-  display: block;
-}
-
-.hero-title-divider {
-  display: flex;
-  justify-content: center;
-  justify-self: center;
-  width: fit-content;
-  margin-block: -2px;
-  opacity: 0.95;
-}
-
-.hero-title-divider img {
-  width: clamp(96px, 26vw, 132px);
-  height: auto;
-}
-
 .hero-video-card {
   order: 2;
 }
