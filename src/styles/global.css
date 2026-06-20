@@ -343,6 +343,26 @@ h3 {
   gap: 28px;
 }
 
+.hero-copy h1 {
+  order: 1;
+}
+
+.hero-video-card {
+  order: 2;
+}
+
+.hero-mark {
+  order: 3;
+}
+
+.hero-subtitle {
+  order: 4;
+}
+
+.hero-actions {
+  order: 5;
+}
+
 .hero-mark {
   width: 19px;
   height: 19px;
@@ -1461,13 +1481,39 @@ details p {
   }
 
   .hero-inner {
-    grid-template-columns: minmax(0, 660px) minmax(380px, 520px);
-    gap: 52px;
     padding: 96px 0 70px;
   }
 
   .hero-copy {
-    gap: 22px;
+    grid-template-columns: minmax(0, 660px) minmax(380px, 520px);
+    grid-template-areas:
+      "title video"
+      "mark video"
+      "subtitle video"
+      "actions video";
+    column-gap: 52px;
+    row-gap: 22px;
+    align-items: center;
+  }
+
+  .hero-copy h1 {
+    grid-area: title;
+  }
+
+  .hero-video-card {
+    grid-area: video;
+  }
+
+  .hero-mark {
+    grid-area: mark;
+  }
+
+  .hero-subtitle {
+    grid-area: subtitle;
+  }
+
+  .hero-actions {
+    grid-area: actions;
   }
 
   .hero-subtitle {
