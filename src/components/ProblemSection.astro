@@ -1,11 +1,33 @@
 ---
 import Icon from "./Icon.astro";
 import { landing } from "../../content/landing";
+import { emphasize } from "../utils/richText";
 
 const { problem } = landing;
 
 const actions = problem.ctas ?? [];
 const isExternal = (href: string) => href.startsWith("http");
+
+const problemHighlights = [
+  [],
+  ["95% des praticiens ne connaissent pas"],
+  ["Vos patients transforment leur santé grâce à vous"],
+  [],
+  ["Ce n'est pas un problème de compétence. C'est un problème de visibilité."],
+  [],
+  ["même une seule fois."],
+  ["Vous êtes là pour soigner, pour éduquer, pour changer des vies."],
+  ["une plateforme qui existe déjà, et une audience qui vous attend."]
+];
+
+const costHighlights = [
+  [],
+  ["entre 120 et 600 euros de manque à gagner", "Des créneaux qui ne reviennent jamais."],
+  ["Ce sont des centaines, parfois des milliers d'euros qui disparaissent silencieusement de votre activité."],
+  ["Une expertise qui grandit chaque année, mais que trop peu de patients voient."],
+  ["Et elle ne vous trouve pas."],
+  ["double perte. Pour elle, sa santé. Pour vous, votre activité."]
+];
 ---
 
 <section class="section section-light" id="probleme" aria-labelledby="problem-title">
@@ -15,22 +37,28 @@ const isExternal = (href: string) => href.startsWith("http");
       <h2 id="problem-title">{problem.title}</h2>
     </div>
 
-    <article class="story-panel story-panel-primary">
-      <div class="problem-copy-block">
+      <article class="story-panel story-panel-primary">
+        <div class="problem-copy-block">
         {problem.paragraphs.map((paragraph, index) => (
-          <p class={index === 0 ? "section-intro lead-paragraph" : "section-intro"}>{paragraph}</p>
+          <p
+            class={index === 0 ? "section-intro lead-paragraph" : "section-intro"}
+            set:html={emphasize(paragraph, problemHighlights[index] ?? [])}
+          ></p>
         ))}
-      </div>
-    </article>
+        </div>
+      </article>
 
-    <article class="story-panel">
-      <h3>{problem.costTitle}</h3>
-      <div class="problem-copy-block">
+      <article class="story-panel">
+        <h3>{problem.costTitle}</h3>
+        <div class="problem-copy-block">
         {problem.costParagraphs.map((paragraph, index) => (
-          <p class={index === 0 ? "section-intro lead-paragraph" : "section-intro"}>{paragraph}</p>
+          <p
+            class={index === 0 ? "section-intro lead-paragraph" : "section-intro"}
+            set:html={emphasize(paragraph, costHighlights[index] ?? [])}
+          ></p>
         ))}
-      </div>
-    </article>
+        </div>
+      </article>
 
     <div class="section-copy">
       {actions.length ? (

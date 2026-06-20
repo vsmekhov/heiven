@@ -1,11 +1,28 @@
 ---
 import Icon from "./Icon.astro";
 import { landing } from "../../content/landing";
+import { emphasize } from "../utils/richText";
 
 const { solution } = landing;
 
 const actions = solution.ctas ?? [];
 const isExternal = (href: string) => href.startsWith("http");
+
+const solutionHighlights = [
+  [],
+  ["La demande est là."],
+  ["la référence francophone en santé fonctionnelle, médecine intégrative et longévité."],
+  ["Plus de 680 000 personnes", "plus de 300 000 abonnés sur nos deux comptes Instagram"],
+  ["nos contenus sont vus plusieurs millions de fois chaque mois."],
+  [],
+  ["C'est exactement l'audience que vous cherchez à atteindre."]
+];
+
+const stepHighlights = [
+  ["Étape 1 - Vous créez votre contenu."],
+  ["Étape 2 - Vous publiez depuis votre compte Instagram (et/ou Facebook) et vous ajoutez Heiven et Vaincre la Fatigue en collaboration."],
+  ["Étape 3 - Vos futurs patients vous découvrent."]
+];
 ---
 
 <section class="section section-muted" id="solution" aria-labelledby="solution-title">
@@ -18,7 +35,10 @@ const isExternal = (href: string) => href.startsWith("http");
     <article class="story-panel story-panel-primary">
       <div class="problem-copy-block">
         {solution.paragraphs.map((paragraph, index) => (
-          <p class={index === 1 ? "section-intro lead-paragraph" : "section-intro"}>{paragraph}</p>
+          <p
+            class={index === 1 ? "section-intro lead-paragraph" : "section-intro"}
+            set:html={emphasize(paragraph, solutionHighlights[index] ?? [])}
+          ></p>
         ))}
       </div>
     </article>
@@ -34,13 +54,23 @@ const isExternal = (href: string) => href.startsWith("http");
             <Icon name="CircleCheck" class="step-icon" />
             <span>Étape {index + 1}</span>
           </div>
-          <h3>{step.title}</h3>
-          <p>{step.text}</p>
+          <h3 set:html={emphasize(step.title, stepHighlights[index] ?? [])}></h3>
+          <p
+            set:html={emphasize(step.text, [
+              index === 0 ? "Mon guide de création de contenu, inclus dans votre accès" : "",
+              index === 0 ? "une structure éprouvée pour capter l'attention dès les trois premières secondes." : "",
+              index === 1 ? "Votre publication apparaît au même moment sur votre compte, sur Heiven Longévité et sur Vaincre la Fatigue." : "",
+              index === 2 ? "Ils visitent votre profil, ils s'abonnent, leur confiance grandit." : ""
+            ])}
+          ></p>
         </article>
       ))}
     </div>
 
-    <p class="section-intro method-outro">{solution.methodOutro}</p>
+    <p
+      class="section-intro method-outro"
+      set:html={emphasize(solution.methodOutro, ["sur trois comptes à la fois"])}
+    ></p>
 
     {actions.length ? (
       <div class="section-actions">

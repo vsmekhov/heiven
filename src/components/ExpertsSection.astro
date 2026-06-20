@@ -1,11 +1,23 @@
 ---
 import Icon from "./Icon.astro";
 import { landing } from "../../content/landing";
+import { emphasize } from "../utils/richText";
 
 const { experts } = landing;
 
 const actions = experts.ctas ?? [];
 const isExternal = (href: string) => href.startsWith("http");
+
+const associationHighlights = [
+  ["Sur Heiven, vous ne publiez pas seul dans votre coin."],
+  ["les références absolues de la santé fonctionnelle francophone."]
+];
+
+const testimonialHighlights = [
+  ["J'ai aidé des praticiens qui démarraient comme des praticiens déjà connus à gagner en visibilité, à remplir leur agenda, à faire connaître leur travail."],
+  [],
+  ["En attendant la mise en ligne de ces témoignages, voici quelques collaborations déjà publiées sur Heiven :"]
+];
 ---
 
 <section class="section section-dark" id="association" aria-labelledby="experts-title">
@@ -15,8 +27,8 @@ const isExternal = (href: string) => href.startsWith("http");
         <p class="eyebrow">Preuve communautaire</p>
         <h2 id="experts-title">{experts.associationTitle}</h2>
         <div class="problem-copy-block">
-          {experts.associationParagraphs.map((paragraph) => (
-            <p class="section-intro">{paragraph}</p>
+          {experts.associationParagraphs.map((paragraph, index) => (
+            <p class="section-intro" set:html={emphasize(paragraph, associationHighlights[index] ?? [])}></p>
           ))}
         </div>
       </div>
@@ -40,11 +52,14 @@ const isExternal = (href: string) => href.startsWith("http");
       ))}
     </div>
 
-    <p class="section-intro expert-note">{experts.associationImageNote}</p>
+    <p
+      class="section-intro expert-note"
+      set:html={emphasize(experts.associationImageNote, ["je peux faire confiance à ce praticien."])}
+    ></p>
 
     <div class="section-copy testimonial-section">
       <h3>{experts.testimonialsTitle}</h3>
-      <p class="section-intro">{experts.testimonialsLead}</p>
+      <p class="section-intro" set:html={emphasize(experts.testimonialsLead, testimonialHighlights[0])}></p>
       <div class="name-grid testimonials-list">
         {experts.testimonialsItems.map((item) => (
           <article class="quote-card">
@@ -52,7 +67,7 @@ const isExternal = (href: string) => href.startsWith("http");
           </article>
         ))}
       </div>
-      <p class="section-intro">{experts.testimonialNote}</p>
+      <p class="section-intro" set:html={emphasize(experts.testimonialNote, ["En attendant la mise en ligne de ces témoignages, voici quelques collaborations déjà publiées sur Heiven :"])}></p>
       <div class="expert-grid collaboration-grid">
         {experts.featuredPeople.slice(0, 3).map((person) => (
           <article class="expert-card collaboration-card">

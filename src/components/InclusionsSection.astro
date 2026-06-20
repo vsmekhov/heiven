@@ -1,11 +1,27 @@
 ---
 import Icon from "./Icon.astro";
 import { landing } from "../../content/landing";
+import { emphasize } from "../utils/richText";
 
 const { inclusions } = landing;
 
 const actions = inclusions.ctas ?? [];
 const isExternal = (href: string) => href.startsWith("http");
+
+const inclusionParagraphHighlights = [
+  ["quatre fois par mois"],
+  ["plus de 300 000 abonnés", "Heiven Longévité (244K)", "Vaincre la Fatigue (47K)"]
+];
+
+const inclusionPointHighlights = [
+  ["Deux stories"],
+  ["Un guide de création de contenu"],
+  ["Une bibliothèque de prompts"],
+  ["Des ateliers mensuels"],
+  ["L'accès à la communauté privée du Cercle"],
+  ["taillés sur mesure pour notre milieu"],
+  ["les réflexes que vous développez avec Heiven vous serviront bien après la fin de notre collaboration."]
+];
 ---
 
 <section class="section section-light" id="inclusions" aria-labelledby="inclusions-title">
@@ -17,17 +33,20 @@ const isExternal = (href: string) => href.startsWith("http");
 
     <article class="story-panel story-panel-primary">
       <div class="problem-copy-block">
-        {inclusions.paragraphs.map((paragraph) => (
-          <p class="section-intro">{paragraph}</p>
+        {inclusions.paragraphs.map((paragraph, index) => (
+          <p
+            class="section-intro"
+            set:html={emphasize(paragraph, inclusionParagraphHighlights[index] ?? [])}
+          ></p>
         ))}
       </div>
     </article>
 
     <div class="inclusion-grid">
-      {inclusions.points.map((point) => (
+      {inclusions.points.map((point, index) => (
         <article class="text-card inclusion-card">
           <Icon name="CircleCheck" class="card-icon" />
-          <p>{point}</p>
+          <p set:html={emphasize(point, inclusionPointHighlights[index] ?? [])}></p>
         </article>
       ))}
     </div>

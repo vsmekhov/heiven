@@ -1,11 +1,22 @@
 ---
 import Icon from "./Icon.astro";
 import { landing } from "../../content/landing";
+import { emphasize } from "../utils/richText";
 
 const { faq } = landing;
 
 const actions = faq.ctas ?? [];
 const isExternal = (href: string) => href.startsWith("http");
+
+const answerHighlights = [
+  ["Edit d'Instagram, Captions ou CapCut, en moins de trente minutes."],
+  ["Deux à trois heures une fois le rythme pris."],
+  ["communauté de plus de 300 000 personnes qui ne vous connaissent pas encore"],
+  ["Oui, dans votre légende et votre biographie."],
+  ["« comment avez-vous entendu parler de moi ? »"],
+  ["Le principe de déductibilité des charges professionnelles s'applique dans la plupart des pays"],
+  ["50 praticiens"]
+];
 ---
 
 <section class="section section-light" id="faq" aria-labelledby="faq-title">
@@ -15,15 +26,15 @@ const isExternal = (href: string) => href.startsWith("http");
     </div>
 
     <div class="faq-list">
-      {faq.items.map((item) => (
+      {faq.items.map((item, index) => (
         <details>
-          <summary>
-            <Icon name="HelpCircle" class="summary-icon" size={18} />
-            <span>{item.question}</span>
-          </summary>
-          <p>{item.answer}</p>
-        </details>
-      ))}
+        <summary>
+          <Icon name="HelpCircle" class="summary-icon" size={18} />
+          <span>{item.question}</span>
+        </summary>
+          <p set:html={emphasize(item.answer, answerHighlights[index] ?? [])}></p>
+      </details>
+    ))}
     </div>
   </div>
 

@@ -347,6 +347,28 @@ h3 {
   order: 1;
 }
 
+.hero-title {
+  display: grid;
+  gap: 14px;
+}
+
+.hero-title-line {
+  display: block;
+}
+
+.hero-title-divider {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  width: fit-content;
+  opacity: 0.95;
+}
+
+.hero-title-divider img {
+  width: clamp(128px, 39vw, 170px);
+  height: auto;
+}
+
 .hero-video-card {
   order: 2;
 }

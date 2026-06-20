@@ -1,9 +1,59 @@
 ---
 import Icon from "./Icon.astro";
 import { landing } from "../../content/landing";
+import { emphasize } from "../utils/richText";
 
 const { pricing } = landing;
 const isExternal = (href: string) => href.startsWith("http");
+
+const roiHighlights = [
+  ["Faites le calcul : cet abonnement ne vous coûte (presque) rien. Il vous rapporte."],
+  ["100 euros par mois pour les non-médecins, 200 euros pour les médecins."],
+  ["charge professionnelle, déductible de votre bénéfice imposable"],
+  ["vous ne payez pas vraiment 100 euros", "Vous en payez une fraction."],
+  ["un seul nouveau patient représente."],
+  ["80 à 150 euros chez un naturopathe, 150 à 300 euros chez un médecin fonctionnel."],
+  ["la relation avec votre patient ne s'arrête jamais là."],
+  ["c'est 300 à 2 000 euros par patient."],
+  ["Un seul nouveau patient venu de Heiven efface votre adhésion du mois."],
+  ["Négatif."],
+  ["Ce n'est pas une figure de style. C'est de l'arithmétique."]
+];
+
+const committeeHighlights = [
+  ["C'est un cercle fermé, dont la valeur repose entièrement sur la rigueur de sa sélection."],
+  ["s'assurer que chaque membre admis partage les mêmes exigences de formation, de pratique et d'éthique."],
+  ["exclusivement aux côtés de praticiens sérieux"]
+];
+
+const accessHighlights = [
+  ["Et c'est précisément ce qui le rend précieux."],
+  ["un nombre limité de praticiens par cycle"],
+  ["Une formation reconnue"],
+  ["Au moins six mois de pratique en prise en charge fonctionnelle."],
+  ["Nous ne cherchons pas des influenceurs. Nous cherchons des praticiens passionnés, compétents et expérimentés, qui ont quelque chose à transmettre."],
+  ["Si votre candidature est retenue, vous recevez votre accès et votre guide de démarrage."]
+];
+
+const trustHighlights = [
+  [],
+  ["quatre fois par mois, devant plus de 300 000 personnes"],
+  ["d'être vu, d'être reconnu, d'inspirer confiance", "c'est exactement ce que des publications régulières construisent."],
+  ["en publiant régulièrement, vous ne feriez pas venir au moins un nouveau patient."],
+  [],
+  ["Que vous soyez, tout simplement, qui vous êtes déjà"],
+  ["C'est exactement ce que notre communauté attend."]
+];
+
+const urgencyHighlights = [
+  ["Réserver votre place aujourd'hui ne veut pas dire publier demain."],
+  [],
+  [],
+  ["c'est le seul moment de l'année où vous avez le temps."],
+  ["septembre est LE grand rendez-vous de la santé."],
+  ["une longueur d'avance.", "déjà installé sur Heiven, déjà vu, déjà reconnu"],
+  ["Le bon moment pour les remplir, c'est tout l'été."]
+];
 ---
 
 <section class="section section-accent" id="offre" aria-labelledby="pricing-title">
@@ -14,11 +64,14 @@ const isExternal = (href: string) => href.startsWith("http");
     </div>
     <article class="story-panel story-panel-primary">
       <div class="problem-copy-block">
-        {pricing.roiParagraphs.map((paragraph, index) => (
-          <p class={index === 0 ? "section-intro lead-paragraph" : "section-intro"}>{paragraph}</p>
-        ))}
-      </div>
-    </article>
+          {pricing.roiParagraphs.map((paragraph, index) => (
+            <p
+              class={index === 0 ? "section-intro lead-paragraph" : "section-intro"}
+              set:html={emphasize(paragraph, roiHighlights[index] ?? [])}
+            ></p>
+          ))}
+        </div>
+      </article>
   </div>
 
   <div class="section-inner pricing-block">
@@ -26,8 +79,8 @@ const isExternal = (href: string) => href.startsWith("http");
       <div class="section-copy">
         <h3>{pricing.committeeTitle}</h3>
         <div class="problem-copy-block">
-          {pricing.committeeParagraphs.map((paragraph) => (
-            <p class="section-intro">{paragraph}</p>
+          {pricing.committeeParagraphs.map((paragraph, index) => (
+            <p class="section-intro" set:html={emphasize(paragraph, committeeHighlights[index] ?? [])}></p>
           ))}
         </div>
         <ul class="name-list">
@@ -56,8 +109,8 @@ const isExternal = (href: string) => href.startsWith("http");
       <div class="section-copy">
         <h3>{pricing.accessTitle}</h3>
         <div class="problem-copy-block">
-          {pricing.accessParagraphs.map((paragraph) => (
-            <p class="section-intro">{paragraph}</p>
+          {pricing.accessParagraphs.map((paragraph, index) => (
+            <p class="section-intro" set:html={emphasize(paragraph, accessHighlights[index] ?? [])}></p>
           ))}
         </div>
       </div>
@@ -76,10 +129,29 @@ const isExternal = (href: string) => href.startsWith("http");
           <h4>{plan.title}</h4>
           <p class="pricing-price">{plan.price}</p>
           <ul class="feature-list">
-            {plan.points.map((item) => (
+            {plan.points.map((item, index) => (
               <li>
                 <Icon name="CircleCheck" class="list-icon" size={16} />
-                {item}
+                <span
+                  set:html={emphasize(
+                    item,
+                    plan.title.startsWith("ESSENTIEL")
+                      ? [
+                          index === 0 ? "Vous publiez sur Heiven, vous accédez à la communauté privée du Cercle et aux ateliers mensuels. Vous arrêtez quand vous voulez." : "",
+                          index === 1 ? "2 reels ou carrousels + 2 stories publiés chaque mois sur Heiven" : "",
+                          index === 2 ? "Le guide complet de création de contenu et la bibliothèque de prompts" : "",
+                          index === 3 ? "Les ateliers mensuels du Cercle" : "",
+                          index === 4 ? "L'accès à la communauté privée Heiven Cercle Pro" : ""
+                        ]
+                      : [
+                          index === 0 ? "Tout ce que comprend l'abonnement Essentiel, plus les avantages réservés aux fondateurs du Cercle." : "",
+                          index === 1 ? "2 mois offerts sur l'année" : "",
+                          index === 2 ? "Placement prioritaire" : "",
+                          index === 3 ? "Tarif fondateur garanti pour toute la durée de votre abonnement" : "",
+                          index === 4 ? "Paiement en 1, 2 ou 3 fois" : ""
+                        ]
+                  )}
+                ></span>
               </li>
             ))}
           </ul>
@@ -102,8 +174,8 @@ const isExternal = (href: string) => href.startsWith("http");
     <article class="story-panel">
       <h3>{pricing.trustTitle}</h3>
       <div class="problem-copy-block">
-        {pricing.trustParagraphs.map((paragraph) => (
-          <p class="section-intro">{paragraph}</p>
+        {pricing.trustParagraphs.map((paragraph, index) => (
+          <p class="section-intro" set:html={emphasize(paragraph, trustHighlights[index] ?? [])}></p>
         ))}
       </div>
     </article>
@@ -113,8 +185,8 @@ const isExternal = (href: string) => href.startsWith("http");
     <article class="story-panel story-panel-primary">
       <h3>{pricing.urgencyTitle}</h3>
       <div class="problem-copy-block">
-        {pricing.urgencyParagraphs.map((paragraph) => (
-          <p class="section-intro">{paragraph}</p>
+        {pricing.urgencyParagraphs.map((paragraph, index) => (
+          <p class="section-intro" set:html={emphasize(paragraph, urgencyHighlights[index] ?? [])}></p>
         ))}
       </div>
     </article>

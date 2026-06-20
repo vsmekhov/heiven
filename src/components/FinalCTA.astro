@@ -1,22 +1,30 @@
 ---
 import Icon from "./Icon.astro";
 import { landing } from "../../content/landing";
+import { emphasize } from "../utils/richText";
 
 const { finalCta, cta } = landing;
 
 const finalTitleParts = finalCta.title.split("\n");
+
+const finalTitleHighlights = [
+  ["Quelque part en ce moment, votre prochain patient vous cherche."],
+  ["Il cherche quelqu'un comme vous."]
+];
+
+const finalTextHighlights = ["50 places au premier cycle."];
 ---
 
 <section class="final-cta" id="final" aria-labelledby="final-cta-title">
   <div class="section-inner final-cta-inner">
     {finalCta.eyebrow ? <p class="eyebrow">{finalCta.eyebrow}</p> : null}
-    <h2 id="final-cta-title">{finalTitleParts[0]}</h2>
+    <h2 id="final-cta-title" set:html={emphasize(finalTitleParts[0], finalTitleHighlights[0])}></h2>
     <div class="final-copy">
-      {finalTitleParts.slice(1).map((paragraph) => (
-        <p>{paragraph}</p>
+      {finalTitleParts.slice(1).map((paragraph, index) => (
+        <p set:html={emphasize(paragraph, finalTitleHighlights[index + 1] ?? [])}></p>
       ))}
     </div>
-    <p>{finalCta.text}</p>
+    <p set:html={emphasize(finalCta.text, finalTextHighlights)}></p>
     <a class="button button-primary" href={cta.primary.href} target="_blank" rel="noreferrer" aria-label={cta.primary.ariaLabel}>
       {finalCta.buttonLabel}
       <Icon name="ArrowRight" class="button-icon" size={17} />
