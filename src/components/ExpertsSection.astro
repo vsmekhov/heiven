@@ -34,7 +34,7 @@ const isExternal = (href: string) => href.startsWith("http");
       </div>
     </div>
 
-    <div class="name-grid">
+    <div class="name-grid reference-list">
       {experts.associationList.map((person) => (
         <p class="name-item">{person}</p>
       ))}
@@ -42,7 +42,7 @@ const isExternal = (href: string) => href.startsWith("http");
 
     <p class="section-intro expert-note">{experts.associationImageNote}</p>
 
-    <div class="section-copy">
+    <div class="section-copy testimonial-section">
       <h3>{experts.testimonialsTitle}</h3>
       <p class="section-intro">{experts.testimonialsLead}</p>
       <div class="name-grid testimonials-list">

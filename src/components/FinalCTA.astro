@@ -3,18 +3,19 @@ import Icon from "./Icon.astro";
 import { landing } from "../../content/landing";
 
 const { finalCta, cta } = landing;
+
+const finalTitleParts = finalCta.title.split("\n");
 ---
 
 <section class="final-cta" id="final" aria-labelledby="final-cta-title">
   <div class="section-inner final-cta-inner">
     {finalCta.eyebrow ? <p class="eyebrow">{finalCta.eyebrow}</p> : null}
-    <h2 id="final-cta-title">
-      {finalCta.title.split("\n")[0]}
-      <br />
-      {finalCta.title.split("\n")[1]}
-      <br />
-      {finalCta.title.split("\n")[2]}
-    </h2>
+    <h2 id="final-cta-title">{finalTitleParts[0]}</h2>
+    <div class="final-copy">
+      {finalTitleParts.slice(1).map((paragraph) => (
+        <p>{paragraph}</p>
+      ))}
+    </div>
     <p>{finalCta.text}</p>
     <a class="button button-primary" href={cta.primary.href} target="_blank" rel="noreferrer" aria-label={cta.primary.ariaLabel}>
       {finalCta.buttonLabel}

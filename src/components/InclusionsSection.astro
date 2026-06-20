@@ -9,16 +9,19 @@ const isExternal = (href: string) => href.startsWith("http");
 ---
 
 <section class="section section-light" id="inclusions" aria-labelledby="inclusions-title">
-  <div class="section-inner">
-    <div class="section-heading">
+  <div class="section-inner editorial-layout">
+    <div class="section-heading section-lede">
       <p class="eyebrow">Ce que vous recevez</p>
       <h2 id="inclusions-title">{inclusions.title}</h2>
+    </div>
+
+    <article class="story-panel story-panel-primary">
       <div class="problem-copy-block">
         {inclusions.paragraphs.map((paragraph) => (
           <p class="section-intro">{paragraph}</p>
         ))}
       </div>
-    </div>
+    </article>
 
     <div class="inclusion-grid">
       {inclusions.points.map((point) => (

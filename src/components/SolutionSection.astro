@@ -9,18 +9,21 @@ const isExternal = (href: string) => href.startsWith("http");
 ---
 
 <section class="section section-muted" id="solution" aria-labelledby="solution-title">
-  <div class="section-inner">
-    <div class="section-heading">
+  <div class="section-inner editorial-layout">
+    <div class="section-heading section-lede">
       {solution.eyebrow ? <p class="eyebrow">{solution.eyebrow}</p> : null}
       <h2 id="solution-title">{solution.title}</h2>
-      <div class="problem-copy-block">
-        {solution.paragraphs.map((paragraph) => (
-          <p class="section-intro">{paragraph}</p>
-        ))}
-      </div>
     </div>
 
-    <div class="section-copy">
+    <article class="story-panel story-panel-primary">
+      <div class="problem-copy-block">
+        {solution.paragraphs.map((paragraph, index) => (
+          <p class={index === 1 ? "section-intro lead-paragraph" : "section-intro"}>{paragraph}</p>
+        ))}
+      </div>
+    </article>
+
+    <div class="section-copy method-heading">
       <h3>{solution.methodTitle}</h3>
     </div>
 
@@ -37,7 +40,7 @@ const isExternal = (href: string) => href.startsWith("http");
       ))}
     </div>
 
-    <p class="section-intro">{solution.methodOutro}</p>
+    <p class="section-intro method-outro">{solution.methodOutro}</p>
 
     {actions.length ? (
       <div class="section-actions">

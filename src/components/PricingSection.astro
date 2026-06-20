@@ -7,19 +7,21 @@ const isExternal = (href: string) => href.startsWith("http");
 ---
 
 <section class="section section-accent" id="offre" aria-labelledby="pricing-title">
-  <div class="section-inner pricing-layout">
-    <div class="section-copy">
+  <div class="section-inner editorial-layout pricing-block">
+    <div class="section-copy section-lede">
       <p class="eyebrow">Investissement</p>
       <h2 id="pricing-title">{pricing.roiTitle}</h2>
+    </div>
+    <article class="story-panel story-panel-primary">
       <div class="problem-copy-block">
-        {pricing.roiParagraphs.map((paragraph) => (
-          <p class="section-intro">{paragraph}</p>
+        {pricing.roiParagraphs.map((paragraph, index) => (
+          <p class={index === 0 ? "section-intro lead-paragraph" : "section-intro"}>{paragraph}</p>
         ))}
       </div>
-    </div>
+    </article>
   </div>
 
-  <div class="section-inner">
+  <div class="section-inner pricing-block">
     <div class="committee-layout">
       <div class="section-copy">
         <h3>{pricing.committeeTitle}</h3>
@@ -49,7 +51,7 @@ const isExternal = (href: string) => href.startsWith("http");
     </div>
   </div>
 
-  <div class="section-inner">
+  <div class="section-inner pricing-block">
     <div class="access-panel">
       <div class="section-copy">
         <h3>{pricing.accessTitle}</h3>
@@ -62,8 +64,8 @@ const isExternal = (href: string) => href.startsWith("http");
     </div>
   </div>
 
-  <div class="section-inner">
-    <div class="section-copy">
+  <div class="section-inner pricing-block">
+    <div class="section-copy section-lede">
       <p class="eyebrow">Tarifs</p>
       <h3>{pricing.offerTitle}</h3>
       <p class="section-intro">{pricing.offerIntro}</p>
@@ -96,26 +98,26 @@ const isExternal = (href: string) => href.startsWith("http");
     <p class="section-intro pricing-note">{pricing.pricingNote}</p>
   </div>
 
-  <div class="section-inner">
-    <div class="section-copy">
+  <div class="section-inner pricing-block">
+    <article class="story-panel">
       <h3>{pricing.trustTitle}</h3>
       <div class="problem-copy-block">
         {pricing.trustParagraphs.map((paragraph) => (
           <p class="section-intro">{paragraph}</p>
         ))}
       </div>
-    </div>
+    </article>
   </div>
 
-  <div class="section-inner">
-    <div class="section-copy">
+  <div class="section-inner pricing-block">
+    <article class="story-panel story-panel-primary">
       <h3>{pricing.urgencyTitle}</h3>
       <div class="problem-copy-block">
         {pricing.urgencyParagraphs.map((paragraph) => (
           <p class="section-intro">{paragraph}</p>
         ))}
       </div>
-    </div>
+    </article>
   </div>
 
   <div class="section-inner">
