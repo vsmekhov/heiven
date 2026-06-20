@@ -355,7 +355,7 @@ export const landing = {
       {
         title: "ESSENTIEL - sans engagement",
         price:
-          "100 € / mois (praticiens de santé) - 200 € / mois (médecins)",
+          "99 € / mois (praticiens de santé) - 199 € / mois (médecins)",
         points: [
           "Vous publiez sur Heiven, vous accédez à la communauté privée du Cercle et aux ateliers mensuels. Vous arrêtez quand vous voulez.",
           "2 reels ou carrousels + 2 stories publiés chaque mois sur Heiven",
@@ -371,7 +371,7 @@ export const landing = {
       {
         title: "MEMBRE FONDATEUR - à l'année",
         price:
-          "1 000 € (praticiens de santé) - 2 000 € (médecins)\nsoit 2 mois offerts",
+          "990 € (praticiens de santé) - 1 990 € (médecins)\nsoit 2 mois offerts",
         points: [
           "Tout ce que comprend l'abonnement Essentiel, plus les avantages réservés aux fondateurs du Cercle.",
           "2 mois offerts sur l'année",
