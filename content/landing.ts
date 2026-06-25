@@ -73,7 +73,7 @@ export const landing = {
       "Et pourtant, il reste des créneaux vides dans votre agenda.",
       "Ce n'est pas un problème de compétence. C'est un problème de visibilité.",
       "Souvent, vos futurs patients sont perdus. Non seulement ils sont en errance médicale, mais quand ils cherchent enfin un professionnel avec une approche différente, ils ne savent pas à qui faire confiance.",
-      "Alors ils regardent des reels. Et ils font confiance aux visages qu'ils reconnaissent. Ils choisissent le praticien qu'ils ont déjà vu quelque part - même une seule fois.",
+      "Alors ils vont sur les réseaux, ils regardent des reels, des carrousels. Et ils font confiance aux visages qu'ils reconnaissent - ceux qu'ils ont vus plusieurs fois.",
       "Et pour vous, percer seul sur les réseaux sociaux prend très, très longtemps. Apprendre les codes de chaque plateforme demande des mois d'essais et d'erreurs. Et vous n'êtes pas là pour devenir influenceur. Vous êtes là pour soigner, pour éduquer, pour changer des vies.",
       "Il vous manque une seule chose : une plateforme qui existe déjà, et une audience qui vous attend."
     ],
