@@ -10,8 +10,6 @@ const isExternal = (href: string) => href.startsWith("http");
 
 const solutionHighlights = [
   ["des dizaines de followers de Heiven me demandent où trouver un médecin ou un praticien en santé intégrative et fonctionnelle,"],
-  [],
-  [],
   ["ils vous trouveront directement dans le feed de Heiven."],
   ["La demande est là."],
   ["la référence francophone en santé fonctionnelle, médecine intégrative et longévité."],
@@ -39,7 +37,7 @@ const stepHighlights = [
       <div class="problem-copy-block">
         {solution.paragraphs.map((paragraph, index) => (
           <p
-            class={index === 4 ? "section-intro lead-paragraph" : "section-intro"}
+            class={index === 2 ? "section-intro lead-paragraph" : "section-intro"}
             set:html={emphasize(paragraph, solutionHighlights[index] ?? [])}
           ></p>
         ))}
