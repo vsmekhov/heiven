@@ -93,10 +93,6 @@ export const landing = {
     ],
     ctas: [
       {
-        label: "Voir la méthode",
-        href: "#solution"
-      },
-      {
         label: "J'accède au Heiven Cercle Pro",
         href: "https://tally.so/r/Y5ed6W"
       }
