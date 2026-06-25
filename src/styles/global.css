@@ -77,7 +77,7 @@ li {
 }
 
 .section {
-  padding: 76px 0;
+  padding: 56px 0;
 }
 
 .section-light {
@@ -156,7 +156,7 @@ h3 {
 
 .section-heading {
   max-width: 900px;
-  margin-bottom: 42px;
+  margin-bottom: 28px;
 }
 
 .section-intro {
@@ -1318,7 +1318,7 @@ details p {
   }
 
   .section {
-    padding: 92px 0;
+    padding: 68px 0;
   }
 
   .editorial-layout {
@@ -1398,7 +1398,7 @@ details p {
   }
 
   .section-heading {
-    margin-bottom: 50px;
+    margin-bottom: 34px;
   }
 
   .step-grid,
@@ -1446,7 +1446,7 @@ details p {
 
 @media (min-width: 1080px) {
   .section {
-    padding: 88px 0;
+    padding: 64px 0;
   }
 
   h1 {
@@ -1609,7 +1609,7 @@ details p {
   }
 
   .section-heading {
-    margin-bottom: 42px;
+    margin-bottom: 30px;
   }
 
   .section-intro {
