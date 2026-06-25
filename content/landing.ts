@@ -26,7 +26,7 @@ export const landing = {
   },
   cta: {
     primary: {
-      label: "Je candidate au Heiven Cercle Pro",
+      label: "J'accède au Heiven Cercle Pro",
       href: "https://tally.so/r/Y5ed6W",
       ariaLabel: "Ouvrir le formulaire de candidature Heiven Cercle Pro"
     },
@@ -36,12 +36,12 @@ export const landing = {
     }
   },
   hero: {
-    title: "VOTRE AGENDA DEVRAIT ÊTRE PLEIN. VOS RÉSEAUX DEVRAIENT LE REMPLIR.",
+    title: "VOTRE AGENDA DEVRAIT ÊTRE PLEIN.<br>VOS RÉSEAUX DEVRAIENT LE REMPLIR.",
     subtitle:
       "Rejoignez le Heiven Cercle Pro et faites découvrir votre expertise à plus de 300 000 personnes qui cherchent un professionnel de santé intégrative et fonctionnelle - et transformez cette visibilité en nouveaux patients.",
     cta: {
       primary: {
-        label: "Je candidate au Heiven Cercle Pro",
+        label: "J'accède au Heiven Cercle Pro",
         href: "https://tally.so/r/Y5ed6W",
         ariaLabel: "Candidater au Cercle Pro"
       },
@@ -97,7 +97,7 @@ export const landing = {
         href: "#solution"
       },
       {
-        label: "Je candidate au Cercle Pro",
+        label: "J'accède au Heiven Cercle Pro",
         href: "https://tally.so/r/Y5ed6W"
       }
     ]
@@ -166,7 +166,7 @@ export const landing = {
         href: "#association"
       },
       {
-        label: "Je candidate maintenant",
+        label: "J'accède au Heiven Cercle Pro",
         href: "https://tally.so/r/Y5ed6W"
       }
     ]
@@ -417,7 +417,7 @@ export const landing = {
         href: "https://tally.so/r/Y5ed6W"
       },
       {
-        label: "Je candidate dès maintenant",
+        label: "J'accède au Heiven Cercle Pro",
         href: "https://tally.so/r/Y5ed6W"
       }
     ]
@@ -463,7 +463,7 @@ export const landing = {
     ],
     ctas: [
       {
-        label: "Je candidate maintenant",
+        label: "J'accède au Heiven Cercle Pro",
         href: "https://tally.so/r/Y5ed6W"
       },
       {
@@ -477,7 +477,7 @@ export const landing = {
     title:
       "Quelque part en ce moment, votre prochain patient vous cherche.\nIl a essayé la médecine allopathique. Il n'a pas trouvé de réponses. Il cherche quelqu'un qui pratique l'approche intégrative et fonctionnelle, qui prend le temps nécessaire d'explorer le terrain et de remonter aux causes profondes.\nIl cherche quelqu'un comme vous.",
     text: "Vos candidatures sont examinées sous 48 heures ouvrées. 50 places au premier cycle.",
-    buttonLabel: "Je candidate au Heiven Cercle Pro",
+    buttonLabel: "J'accède au Heiven Cercle Pro",
     secondary: {
       label: "Voir l'offre complète",
       href: "#offre"

@@ -31,7 +31,7 @@ const isExternal = (href: string) => href.startsWith("http");
 
   <div class="section-inner hero-inner">
     <div class="hero-copy">
-      <h1 id="hero-title">{hero.title}</h1>
+      <h1 id="hero-title" set:html={hero.title}></h1>
       <aside class="hero-video-card" aria-label={hero.video.title}>
         <div class="hero-video-frame">
           <iframe
