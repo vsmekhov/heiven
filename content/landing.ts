@@ -102,8 +102,10 @@ export const landing = {
     eyebrow: "",
     title: "VOS FUTURS PATIENTS SONT DÉJÀ LÀ",
     paragraphs: [
-      "Chaque semaine, des dizaines de followers de Heiven me demandent où trouver un médecin ou un praticien en santé intégrative et fonctionnelle, près de chez eux ou en visio - souvent pour une problématique que la médecine allopathique n'a pas su résoudre.",
-      "Pendant des années, je leur ai répondu un par un - en message privé, en commentaire, ou en story. Désormais, ils vous trouveront directement dans le feed de Heiven.",
+      "Chaque semaine, des dizaines de followers de Heiven me demandent où trouver un médecin ou un praticien en santé intégrative et fonctionnelle, près de chez eux ou en visio.",
+      "Souvent pour une problématique que la médecine allopathique n'a pas su résoudre.",
+      "Pendant des années, je leur ai répondu un par un - en message privé, en commentaire, ou en story.",
+      "Désormais, ils vous trouveront directement dans le feed de Heiven.",
       "La demande est là.",
       "Depuis 2022, Heiven Longévité est devenu la référence francophone en santé fonctionnelle, médecine intégrative et longévité. Construite de zéro, sans publicité achetée - uniquement par la qualité d'un contenu fondé sur l'expertise scientifique et médicale de nos intervenants, et par la confiance d'une audience fidèle.",
       "Plus de 680 000 personnes nous suivent sur nos plateformes - et ce chiffre grandit chaque semaine. Nous réunissons plus de 300 000 abonnés sur nos deux comptes Instagram, Heiven Longévité et Vaincre la Fatigue.",
