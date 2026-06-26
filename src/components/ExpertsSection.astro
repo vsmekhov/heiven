@@ -45,7 +45,7 @@ const testimonialHighlights = [
       {experts.associationPeople.map((person) => (
         <figure class="person-tile">
           {person.image ? (
-            <img src={person.image} alt={person.alt} loading="lazy" decoding="async" />
+            <img src={person.image} alt={person.alt} loading="lazy" decoding="async" style={person.objectPosition ? `object-position: ${person.objectPosition}` : undefined} />
           ) : (
             <span class="person-placeholder" aria-hidden="true">{initials(person.name)}</span>
           )}

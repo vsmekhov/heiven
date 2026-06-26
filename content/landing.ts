@@ -177,7 +177,7 @@ export const landing = {
       { name: "Julie Pradines", image: "/assets/expert-julie-pradines.avif", alt: "Portrait de Julie Pradines" },
       { name: "Dr Alain Butnaru", image: "/assets/expert-alain-butnaru.jpg", alt: "Portrait du Dr Alain Butnaru" },
       { name: "Dr Aurélien Nunez", image: "/assets/expert-dr-nunez.jpg", alt: "Portrait du Dr Aurélien Nunez" },
-      { name: "Garence Nageon", image: "/assets/expert-garence-nageon.jpg", alt: "Portrait de Garence Nageon" },
+      { name: "Garence Nageon", image: "/assets/expert-garence-nageon.jpg", alt: "Portrait de Garence Nageon", objectPosition: "50% 8%" },
       { name: "Isabelle Meurgey", image: "/assets/expert-isabelle-meurgey.jpg", alt: "Portrait d'Isabelle Meurgey" },
       { name: "Professeur Vincenzo Castronovo", image: "/assets/expert-vincenzo-castronovo.jpg", alt: "Portrait du Professeur Vincenzo Castronovo" },
       { name: "Professeur Philippe Humbert", image: "/assets/expert-philippe-humbert.webp", alt: "Portrait du Professeur Philippe Humbert" },
@@ -190,7 +190,7 @@ export const landing = {
       { name: "Christian Vélot", image: "/assets/expert-christian-velot.png", alt: "Portrait de Christian Vélot" },
       { name: "Dr Denys Coester", image: "/assets/expert-denys-coester.webp", alt: "Portrait du Dr Denys Coester" },
       { name: "Dr Guénolé Addor", image: "/assets/expert-guenole-addor.png", alt: "Portrait du Dr Guénolé Addor" },
-      { name: "Camille Hermann", image: "/assets/expert-camille-hermann.png", alt: "Portrait de Camille Hermann" }
+      { name: "Camille Hermann", image: "/assets/expert-camille-hermann.png", alt: "Portrait de Camille Hermann", objectPosition: "50% 68%" }
     ],
     featuredPeople: [
       {
