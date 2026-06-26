@@ -925,6 +925,23 @@ details p {
   letter-spacing: 0.04em;
 }
 
+/* Mur de portraits du Comité des Experts (mosaïque sans légendes) */
+.committee-mosaic {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
+  gap: 4px;
+  margin-top: 26px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.committee-mosaic img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
 .quote-card {
   border: 1px solid var(--line-light);
   border-radius: 8px;

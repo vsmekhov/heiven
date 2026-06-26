@@ -270,57 +270,31 @@ export const landing = {
       "C'est ce qui garantit que les patients qui vous découvrent ici savent qu'ils peuvent vous faire confiance."
     ],
     committeeMembers: [
-      "Dr Alain Butnaru spécialiste de la micronutrition",
-      "Dr Isabelle Meurgey spécialiste de la micronutrition et de la génomique",
-      "Dr Nicolas Dedieu, PharmD",
-      "Dr Jenny Becam - médecin biologiste",
-      "Dr Laurent Fogel - spécialiste de la micronutrition",
-      "Christian Boyer, PhD - docteur en biologie, santé et nutrition",
-      "Garence Naigeon - diététicienne-nutritionniste, DIUE MAPS",
-      "Julie Pradines - infirmière et naturopathe, experte en micronutrition",
-      "LM Dr Aurélien Nunez - médecin, expert en microbiote, immunité, hormones et longévité",
-      "Lm Dr Gérard Garofalo - spécialiste de la micronutrition",
-      "(lm) Amin Gasmi, PhD - physiologiste, micronutritionniste",
-      "Dr Sandra Chareau - médecin généraliste formée en micronutrition",
-      "Lm Jérémy Barlow - naturopathe, président de la Société Française de Micronutrition Intégrative"
+      { name: "Dr Alain Butnaru", role: "spécialiste de la micronutrition" },
+      { name: "Dr Isabelle Meurgey", role: "spécialiste de la micronutrition et de la génomique" },
+      { name: "Dr Nicolas Dedieu, PharmD", role: "" },
+      { name: "Dr Jenny Becam", role: "médecin biologiste" },
+      { name: "Dr Laurent Fogel", role: "spécialiste de la micronutrition" },
+      { name: "Christian Boyer, PhD", role: "docteur en biologie, santé et nutrition" },
+      { name: "Garence Naigeon", role: "diététicienne-nutritionniste, DIUE MAPS" },
+      { name: "Julie Pradines", role: "infirmière et naturopathe, experte en micronutrition" },
+      { name: "Dr Gérard Garofalo", role: "spécialiste de la micronutrition" },
+      { name: "Amin Gasmi, PhD", role: "physiologiste, micronutritionniste" },
+      { name: "Dr Sandra Chareau", role: "médecin généraliste formée en micronutrition" },
+      { name: "Jérémy Barlow", role: "naturopathe, président de la Société Française de Micronutrition Intégrative" }
     ],
     committeeGallery: [
-      {
-        name: "Dr Alain Butnaru",
-        role: "Spécialiste de la micronutrition",
-        image: "/assets/expert-alain-butnaru.jpg",
-        alt: "Portrait du Dr Alain Butnaru"
-      },
-      {
-        name: "Dr Isabelle Meurgey",
-        role: "Micronutrition et génomique",
-        image: "/assets/expert-isabelle-meurgey.jpg",
-        alt: "Portrait du Dr Isabelle Meurgey"
-      },
-      {
-        name: "Dr Jenny Becam",
-        role: "Médecin biologiste",
-        image: "/assets/expert-jenny-becam.jpg",
-        alt: "Portrait du Dr Jenny Becam"
-      },
-      {
-        name: "Dr Laurent Fogel",
-        role: "Micronutrition",
-        image: "/assets/expert-laurent-fogel.jpg",
-        alt: "Portrait du Dr Laurent Fogel"
-      },
-      {
-        name: "Amin Gasmi",
-        role: "PhD - Physiologiste",
-        image: "/assets/expert-amin-gasmi.jpg",
-        alt: "Portrait d'Amin Gasmi"
-      },
-      {
-        name: "Dr Aurélien Nunez",
-        role: "Microbiote, immunité, hormones, longévité",
-        image: "/assets/expert-dr-nunez.jpg",
-        alt: "Portrait du Dr Aurélien Nunez"
-      }
+      { image: "/assets/expert-alain-butnaru.jpg", alt: "Dr Alain Butnaru" },
+      { image: "/assets/expert-isabelle-meurgey.jpg", alt: "Dr Isabelle Meurgey" },
+      { image: "/assets/expert-jenny-becam.jpg", alt: "Dr Jenny Becam" },
+      { image: "/assets/expert-laurent-fogel.jpg", alt: "Dr Laurent Fogel" },
+      { image: "/assets/expert-christian-boyer.jpg", alt: "Christian Boyer" },
+      { image: "/assets/expert-garence-nageon.jpg", alt: "Garence Naigeon", objectPosition: "50% 8%" },
+      { image: "/assets/expert-julie-pradines.avif", alt: "Julie Pradines" },
+      { image: "/assets/expert-gerard-garofalo.jpg", alt: "Dr Gérard Garofalo" },
+      { image: "/assets/expert-amin-gasmi.jpg", alt: "Amin Gasmi" },
+      { image: "/assets/expert-sandra-chareau.webp", alt: "Dr Sandra Chareau" },
+      { image: "/assets/expert-jeremy-barlow.jpg", alt: "Jérémy Barlow" }
     ],
     accessTitle: "CE CERCLE N'EST PAS OUVERT À TOUT LE MONDE",
     accessParagraphs: [
