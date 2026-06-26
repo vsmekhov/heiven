@@ -108,7 +108,8 @@ export const landing = {
       "Depuis 2022, Heiven Longévité est devenu la référence francophone en santé fonctionnelle, médecine intégrative et longévité. Construite de zéro, sans publicité achetée - uniquement par la qualité d'un contenu fondé sur l'expertise scientifique et médicale de nos intervenants, et par la confiance d'une audience fidèle.",
       "Plus de 680 000 personnes nous suivent sur nos plateformes - et ce chiffre grandit chaque semaine. Nous réunissons plus de 300 000 abonnés sur nos deux comptes Instagram, Heiven Longévité et Vaincre la Fatigue.",
       "Et surtout : nos contenus sont vus plusieurs millions de fois chaque mois.",
-      "Souvent, ce sont des patients en errance médicale qui cherchent des réponses que la médecine conventionnelle ne leur a pas données. Des personnes proactives qui veulent investir dans leur santé et leur longévité. Et des professionnels de santé comme vous, qui transmettent leurs connaissances et partagent leurs pratiques.",
+      "Souvent, ce sont des patients en errance médicale qui cherchent des réponses que la médecine conventionnelle n'a pas réussi à leur donner.",
+      "Des personnes qui veulent investir dans leur santé et leur longévité, devenir actrices de leur bien-être. Et des professionnels comme vous, qui aiment transmettre leur savoir et savent les prendre en charge.",
       "C'est exactement l'audience que vous cherchez à atteindre."
     ],
     methodTitle: "COMMENT ÇA MARCHE : SIMPLE, RAPIDE, EFFICACE",
