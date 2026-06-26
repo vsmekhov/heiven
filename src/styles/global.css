@@ -77,7 +77,7 @@ li {
 }
 
 .section {
-  padding: 56px 0;
+  padding: 44px 0;
 }
 
 .section-light {
@@ -1318,7 +1318,7 @@ details p {
   }
 
   .section {
-    padding: 68px 0;
+    padding: 52px 0;
   }
 
   .editorial-layout {
@@ -1446,7 +1446,7 @@ details p {
 
 @media (min-width: 1080px) {
   .section {
-    padding: 64px 0;
+    padding: 48px 0;
   }
 
   h1 {
