@@ -245,8 +245,7 @@ export const landing = {
       { type: "image", src: "/assets/testimonial-alban-diet-03.png", name: "Alban Corot", label: "Témoignage" },
       { type: "image", src: "/assets/testimonial-camille-hermann.png", name: "Camille Hermann", label: "Témoignage" },
       { type: "image", src: "/assets/testimonial-dr-gakou-01.png", name: "Dr Valérie Gakou", label: "Témoignage" },
-      { type: "image", src: "/assets/testimonial-dr-gakou-coaching.png", name: "Dr Valérie Gakou", label: "Coaching" },
-      { type: "image", src: "/assets/testimonial-dr-chareau-coaching.png", name: "Dr Sandra Chareau", label: "Coaching" }
+      { type: "image", src: "/assets/testimonial-dr-gakou-coaching.png", name: "Dr Valérie Gakou", label: "Coaching" }
     ],
     ctas: []
   },
