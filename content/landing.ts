@@ -252,20 +252,16 @@ export const landing = {
   pricing: {
     roiTitle: "PARLONS DE VOTRE INVESTISSEMENT",
     roiParagraphs: [
-      "Faites le calcul : cet abonnement ne vous coûte (presque) rien. Il vous rapporte.",
+      "Et si cet abonnement vous rapportait plus qu'il ne vous coûte ?",
       "L'adhésion au Cercle Pro, c'est 100 euros par mois pour les non-médecins, 200 euros pour les médecins.",
       "Et c'est une charge professionnelle, déductible de votre bénéfice imposable - exactement comme votre loyer, votre téléphone ou vos formations. En France, en Belgique, en Suisse, les dépenses engagées pour développer votre activité réduisent votre bénéfice imposable avant impôt. Votre comptable vous confirmera le détail selon votre régime.",
-      "Autrement dit, vous ne payez pas vraiment 100 euros - ou 200 si vous êtes médecin. Vous en payez une fraction. Le reste revient dans votre poche.",
+      "Autrement dit, vous n'en payez en réalité qu'une fraction. Le reste revient dans votre poche.",
       "Maintenant, regardez ce qu'un seul nouveau patient représente.",
       "La première consultation, c'est déjà 80 à 150 euros chez un naturopathe, 150 à 300 euros chez un médecin fonctionnel.",
-      "Mais la relation avec votre patient ne s'arrête jamais là. Vous explorez son terrain, vous recommandez les examens à faire.",
-      "Un mois plus tard, il revient avec ses résultats pour la deuxième consultation. Vous mettez en place un premier protocole.",
-      "Puis il revient encore. Dans trois mois, dans six mois.",
+      "Mais la relation avec votre patient ne s'arrête jamais là. Vous explorez son terrain, vous recommandez les examens à faire. Un mois plus tard, il revient avec ses résultats : deuxième consultation, premier protocole. Puis il revient encore, dans trois mois, dans six mois.",
       "Et si vous proposez un programme d'accompagnement, comme beaucoup d'entre vous, c'est 300 à 2 000 euros par patient.",
-      "Vous voyez la logique.",
-      "Un seul nouveau patient venu de Heiven efface votre adhésion du mois.",
-      "Le vrai coût de cet abonnement, après déduction fiscale ? Négatif.",
-      "Ce n'est pas une figure de style. C'est de l'arithmétique."
+      "Au-delà de la visibilité et de l'audience que vous gagnez, un seul nouveau patient venu de Heiven suffit à couvrir votre adhésion.",
+      "Le vrai coût de cet abonnement, après déduction fiscale et premier patient ? Souvent négatif."
     ],
     committeeTitle: "UN COMITÉ DES EXPERTS POUR GARANTIR L'EXCELLENCE DU CERCLE",
     committeeParagraphs: [
