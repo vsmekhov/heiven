@@ -115,20 +115,20 @@ export const landing = {
     methodTitle: "COMMENT ÇA MARCHE : SIMPLE, RAPIDE, EFFICACE",
     steps: [
       {
-        title: "Étape 1 - Vous créez votre contenu.",
+        title: "Vous créez votre contenu.",
         paragraphs: [
           "Mon guide de création de contenu, inclus dans votre accès, vous explique exactement comment faire : comment trouver les bons sujets pour vos reels ou publications, des exemples concrets, des prompts prêts à l'emploi pour écrire les bons hooks, une structure éprouvée pour capter l'attention dès les trois premières secondes.",
           "Je vous fournis aussi une structure type pour vos légendes (et je vous préviens : il va falloir arrêter les hashtags ! ;-) et pour vos appels à l'action, afin de diriger les abonnés vers vos réseaux, votre agenda de prise de rendez-vous, vos produits ou vos formations."
         ]
       },
       {
-        title: "Étape 2 - Publication",
+        title: "Publication",
         paragraphs: [
           "Vous publiez depuis votre compte Instagram (et/ou Facebook) et vous ajoutez Heiven et Vaincre la Fatigue en collaboration. Votre publication apparaît au même moment sur votre compte, sur Heiven Longévité et sur Vaincre la Fatigue."
         ]
       },
       {
-        title: "Étape 3 - Découverte et engagement",
+        title: "Découverte et engagement",
         paragraphs: [
           "Vos futurs patients vous découvrent. Ils visitent votre profil, ils s'abonnent, leur confiance grandit.",
           "Ils viennent vous voir en cabinet, en visio, à un webinaire ou un atelier, ils téléchargent vos guides ou achètent vos livres."
