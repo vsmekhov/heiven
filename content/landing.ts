@@ -269,9 +269,9 @@ export const landing = {
     ],
     committeeTitle: "UN COMITÉ DES EXPERTS POUR GARANTIR L'EXCELLENCE DU CERCLE",
     committeeParagraphs: [
-      "Le Heiven Cercle Pro n'est pas un annuaire ouvert. C'est un cercle fermé, dont la valeur repose entièrement sur la rigueur de sa sélection.",
-      "Chaque candidature est examinée par notre Comité des Experts - composé de praticiens et de scientifiques reconnus de la santé fonctionnelle, intégrative et nutritionnelle francophone. Leur mission : s'assurer que chaque membre admis partage les mêmes exigences de formation, de pratique et d'éthique.",
-      "C'est ce qui garantit que votre présence sur Heiven vous place exclusivement aux côtés de praticiens sérieux - et que les patients qui vous découvrent ici savent qu'ils peuvent vous faire confiance."
+      "Notre Comité des Experts réunit des praticiens et des scientifiques reconnus de la santé fonctionnelle, intégrative et nutritionnelle francophone.",
+      "Leur rôle : veiller à ce que chaque membre admis partage les mêmes valeurs et les mêmes exigences de formation, de pratique et d'éthique.",
+      "C'est ce qui garantit que les patients qui vous découvrent ici savent qu'ils peuvent vous faire confiance."
     ],
     committeeMembers: [
       "Dr Alain Butnaru spécialiste de la micronutrition",
@@ -328,13 +328,13 @@ export const landing = {
     ],
     accessTitle: "CE CERCLE N'EST PAS OUVERT À TOUT LE MONDE",
     accessParagraphs: [
-      "Et c'est précisément ce qui le rend précieux.",
+      "Le Heiven Cercle Pro n'est pas un annuaire ouvert. Et c'est précisément ce qui le rend précieux.",
       "Nous accueillons un nombre limité de praticiens par cycle - pour que chaque membre garde une vraie visibilité, et que l'audience ne soit jamais saturée.",
       "Pour être admis, vous réunissez deux conditions :",
-      "Une formation reconnue en santé fonctionnelle, intégrative ou micronutrition - DU, DFM, SIIN, La Nutrition Positive, Oreka, IFM, MAPS, DUMAA, ou cursus équivalent.",
+      "Une formation reconnue en santé fonctionnelle, intégrative ou micronutrition - DU, DFM, SIIN, La Nutrition Positive, Oreka, IFM, MAPS, DUMAA, CFNA ou cursus équivalent.",
       "Au moins six mois de pratique en prise en charge fonctionnelle. Parce qu'une formation, aussi solide soit-elle, ne remplace pas l'expérience du cabinet.",
       "Nous ne cherchons pas des influenceurs. Nous cherchons des praticiens passionnés, compétents et expérimentés, qui ont quelque chose à transmettre.",
-      "Si votre candidature est retenue, vous recevez votre accès et votre guide de démarrage."
+      "Pour garantir ce niveau d'exigence, j'ai réuni un Comité des Experts qui dispose d'un droit de veto sur les admissions au Cercle Pro."
     ],
     offerTitle: "REJOIGNEZ LE CERCLE PRO",
     offerIntro: "Un investissement dont le coût réel devient négatif dès votre premier patient. Deux façons de rejoindre le Cercle. Une seule limite : 50 places par cycle.",

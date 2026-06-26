@@ -21,18 +21,19 @@ const roiHighlights = [
 ];
 
 const committeeHighlights = [
-  ["C'est un cercle fermé, dont la valeur repose entièrement sur la rigueur de sa sélection."],
-  ["s'assurer que chaque membre admis partage les mêmes exigences de formation, de pratique et d'éthique."],
-  ["exclusivement aux côtés de praticiens sérieux"]
+  [],
+  ["veiller à ce que chaque membre admis partage les mêmes valeurs et les mêmes exigences de formation, de pratique et d'éthique."],
+  ["savent qu'ils peuvent vous faire confiance."]
 ];
 
 const accessHighlights = [
-  ["Et c'est précisément ce qui le rend précieux."],
-  ["un nombre limité de praticiens par cycle"],
+  ["précisément ce qui le rend précieux."],
+  ["pour que chaque membre garde une vraie visibilité, et que l'audience ne soit jamais saturée."],
+  [],
   ["Une formation reconnue"],
-  ["Au moins six mois de pratique en prise en charge fonctionnelle."],
-  ["Nous ne cherchons pas des influenceurs. Nous cherchons des praticiens passionnés, compétents et expérimentés, qui ont quelque chose à transmettre."],
-  ["Si votre candidature est retenue, vous recevez votre accès et votre guide de démarrage."]
+  ["Au moins six mois de pratique"],
+  ["Nous cherchons des praticiens passionnés, compétents et expérimentés, qui ont quelque chose à transmettre."],
+  ["Comité des Experts"]
 ];
 
 const trustHighlights = [
@@ -75,6 +76,19 @@ const urgencyHighlights = [
   </div>
 
   <div class="section-inner pricing-block">
+    <div class="access-panel">
+      <div class="section-copy">
+        <h3 class="chapter-title">{pricing.accessTitle}</h3>
+        <div class="problem-copy-block">
+          {pricing.accessParagraphs.map((paragraph, index) => (
+            <p class="section-intro" set:html={emphasize(paragraph, accessHighlights[index] ?? [])}></p>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-inner pricing-block">
     <div class="committee-layout">
       <div class="section-copy">
         <h3 class="chapter-title">{pricing.committeeTitle}</h3>
@@ -100,19 +114,6 @@ const urgencyHighlights = [
             </div>
           </article>
         ))}
-      </div>
-    </div>
-  </div>
-
-  <div class="section-inner pricing-block">
-    <div class="access-panel">
-      <div class="section-copy">
-        <h3 class="chapter-title">{pricing.accessTitle}</h3>
-        <div class="problem-copy-block">
-          {pricing.accessParagraphs.map((paragraph, index) => (
-            <p class="section-intro" set:html={emphasize(paragraph, accessHighlights[index] ?? [])}></p>
-          ))}
-        </div>
       </div>
     </div>
   </div>
