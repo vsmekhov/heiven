@@ -141,7 +141,8 @@ export const landing = {
     title: "CE QUI EST INCLUS DANS VOTRE ACCÈS",
     paragraphs: [
       "Je mets nos plateformes à votre disposition quatre fois par mois :",
-      "Deux reels ou carrousels en collaboration sur nos deux comptes Instagram, qui réunissent plus de 300 000 abonnés. Si vous avez un compte Facebook, vous pouvez aussi être publié sur Heiven Longévité (244K) et Vaincre la Fatigue (47K)."
+      "Deux reels ou carrousels en collaboration sur nos deux comptes Instagram, qui réunissent plus de 300 000 abonnés.",
+      "Si vous avez un compte Facebook, vous pouvez aussi être publié sur Heiven Longévité (244K) et Vaincre la Fatigue (47K)."
     ],
     points: [
       "Deux stories pour inciter à regarder votre reel ou carrousel et à cliquer vers votre agenda ou votre produit digital.",
