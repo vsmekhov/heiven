@@ -1651,6 +1651,7 @@ details p {
 
   .inclusion-card {
     min-height: 210px;
+    align-content: start;
   }
 
   .expert-grid {
