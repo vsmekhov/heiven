@@ -135,16 +135,7 @@ export const landing = {
         ]
       }
     ],
-    ctas: [
-      {
-        label: "Voir ce qui est inclus",
-        href: "#inclusions"
-      },
-      {
-        label: "Parler à un expert",
-        href: "#faq"
-      }
-    ]
+    ctas: []
   },
   inclusions: {
     title: "CE QUI EST INCLUS DANS VOTRE ACCÈS",
