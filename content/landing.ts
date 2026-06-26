@@ -234,18 +234,8 @@ export const landing = {
     testimonialsTitle: "CE QUE HEIVEN A CHANGÉ POUR EUX",
     testimonialsLead:
       "J'ai aidé des praticiens qui démarraient comme des praticiens déjà connus à gagner en visibilité, à remplir leur agenda, à faire connaître leur travail.",
-    testimonialsItems: [
-      "Camille (VeggyGlo) - testimonial !! (to ask)",
-      "Alban Corot - coach en longévité (whatsapp)",
-      "Dr Valérie Gakou - son témoignage sur Insta - livre enfants (to ask)",
-      "Jean-Louis Falconetti - (will do)",
-      "Dr Sandra Chareau - (will do / to ask)",
-      "Clara Materne - nutrithérapeute (to ask)",
-      "Robin Mesnage - (voir whatsapp)",
-      "Dr Gérard Garofalo - micronutritionniste (to ask)",
-      "Dr Laurent Fogel - demander un mot sur mes conseils réseaux sociaux"
-    ],
-    testimonialNote: "En attendant la mise en ligne de ces témoignages, voici quelques collaborations déjà publiées sur Heiven :",
+    testimonialsItems: [],
+    testimonialNote: "Voici ce qu'ils en disent.",
     ctas: [
       {
         label: "Voir les témoignages",

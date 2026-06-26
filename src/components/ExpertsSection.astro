@@ -23,9 +23,7 @@ const associationHighlights = [
 ];
 
 const testimonialHighlights = [
-  ["J'ai aidé des praticiens qui démarraient comme des praticiens déjà connus à gagner en visibilité, à remplir leur agenda, à faire connaître leur travail."],
-  [],
-  ["En attendant la mise en ligne de ces témoignages, voici quelques collaborations déjà publiées sur Heiven :"]
+  ["gagner en visibilité, à remplir leur agenda, à faire connaître leur travail."]
 ];
 ---
 
@@ -61,25 +59,16 @@ const testimonialHighlights = [
     <div class="section-copy testimonial-section">
       <h3 class="chapter-title">{experts.testimonialsTitle}</h3>
       <p class="section-intro" set:html={emphasize(experts.testimonialsLead, testimonialHighlights[0])}></p>
-      <div class="name-grid testimonials-list">
-        {experts.testimonialsItems.map((item) => (
-          <article class="quote-card">
-            <p>{item}</p>
-          </article>
-        ))}
-      </div>
-      <p class="section-intro" set:html={emphasize(experts.testimonialNote, ["En attendant la mise en ligne de ces témoignages, voici quelques collaborations déjà publiées sur Heiven :"])}></p>
-      <div class="expert-grid collaboration-grid">
-        {experts.featuredPeople.slice(0, 3).map((person) => (
-          <article class="expert-card collaboration-card">
-            <img src={person.image} alt={person.alt} loading="lazy" decoding="async" />
-            <div>
-              <h3>{person.name}</h3>
-              <p>Collaboration publiée sur Heiven</p>
-            </div>
-          </article>
-        ))}
-      </div>
+      <p class="section-intro">{experts.testimonialNote}</p>
+      {experts.testimonialsItems.length ? (
+        <div class="name-grid testimonials-list">
+          {experts.testimonialsItems.map((item) => (
+            <article class="quote-card">
+              <p>{item}</p>
+            </article>
+          ))}
+        </div>
+      ) : null}
     </div>
 
     {actions.length ? (
