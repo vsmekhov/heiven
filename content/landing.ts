@@ -155,10 +155,6 @@ export const landing = {
     ],
     ctas: [
       {
-        label: "Voir les membres du cercle",
-        href: "#association"
-      },
-      {
         label: "J'accède au Heiven Cercle Pro",
         href: "https://tally.so/r/Y5ed6W"
       }
