@@ -77,7 +77,7 @@ const urgencyHighlights = [
   <div class="section-inner pricing-block">
     <div class="committee-layout">
       <div class="section-copy">
-        <h3>{pricing.committeeTitle}</h3>
+        <h3 class="chapter-title">{pricing.committeeTitle}</h3>
         <div class="problem-copy-block">
           {pricing.committeeParagraphs.map((paragraph, index) => (
             <p class="section-intro" set:html={emphasize(paragraph, committeeHighlights[index] ?? [])}></p>
@@ -107,7 +107,7 @@ const urgencyHighlights = [
   <div class="section-inner pricing-block">
     <div class="access-panel">
       <div class="section-copy">
-        <h3>{pricing.accessTitle}</h3>
+        <h3 class="chapter-title">{pricing.accessTitle}</h3>
         <div class="problem-copy-block">
           {pricing.accessParagraphs.map((paragraph, index) => (
             <p class="section-intro" set:html={emphasize(paragraph, accessHighlights[index] ?? [])}></p>
@@ -120,7 +120,7 @@ const urgencyHighlights = [
   <div class="section-inner pricing-block">
     <div class="section-copy section-lede">
       <p class="eyebrow">Tarifs</p>
-      <h3>{pricing.offerTitle}</h3>
+      <h3 class="chapter-title">{pricing.offerTitle}</h3>
       <p class="section-intro">{pricing.offerIntro}</p>
     </div>
     <div class="plan-grid">
@@ -172,7 +172,7 @@ const urgencyHighlights = [
 
   <div class="section-inner pricing-block">
     <article class="story-panel">
-      <h3>{pricing.trustTitle}</h3>
+      <h3 class="chapter-title">{pricing.trustTitle}</h3>
       <div class="problem-copy-block">
         {pricing.trustParagraphs.map((paragraph, index) => (
           <p class="section-intro" set:html={emphasize(paragraph, trustHighlights[index] ?? [])}></p>
@@ -183,7 +183,7 @@ const urgencyHighlights = [
 
   <div class="section-inner pricing-block">
     <article class="story-panel story-panel-primary">
-      <h3>{pricing.urgencyTitle}</h3>
+      <h3 class="chapter-title">{pricing.urgencyTitle}</h3>
       <div class="problem-copy-block">
         {pricing.urgencyParagraphs.map((paragraph, index) => (
           <p class="section-intro" set:html={emphasize(paragraph, urgencyHighlights[index] ?? [])}></p>

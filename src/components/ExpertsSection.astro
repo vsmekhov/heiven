@@ -60,7 +60,7 @@ const testimonialHighlights = [
     ></p>
 
     <div class="section-copy testimonial-section">
-      <h3>{experts.testimonialsTitle}</h3>
+      <h3 class="chapter-title">{experts.testimonialsTitle}</h3>
       <p class="section-intro" set:html={emphasize(experts.testimonialsLead, testimonialHighlights[0])}></p>
       <div class="name-grid testimonials-list">
         {experts.testimonialsItems.map((item) => (
