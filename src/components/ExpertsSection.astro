@@ -60,12 +60,20 @@ const testimonialHighlights = [
       <h3 class="chapter-title">{experts.testimonialsTitle}</h3>
       <p class="section-intro" set:html={emphasize(experts.testimonialsLead, testimonialHighlights[0])}></p>
       <p class="section-intro">{experts.testimonialNote}</p>
-      {experts.testimonialsItems.length ? (
-        <div class="name-grid testimonials-list">
-          {experts.testimonialsItems.map((item) => (
-            <article class="quote-card">
-              <p>{item}</p>
-            </article>
+      {experts.testimonials?.length ? (
+        <div class="testimonials-gallery">
+          {experts.testimonials.map((item) => (
+            <figure class="testimonial-media-card">
+              {item.type === "video" ? (
+                <video src={item.src} controls preload="metadata" playsinline></video>
+              ) : (
+                <img src={item.src} alt={`Témoignage de ${item.name}`} loading="lazy" decoding="async" />
+              )}
+              <figcaption>
+                <span class="tm-name">{item.name}</span>
+                <span class="tm-tag">{item.label}</span>
+              </figcaption>
+            </figure>
           ))}
         </div>
       ) : null}

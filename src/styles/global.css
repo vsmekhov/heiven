@@ -876,6 +876,55 @@ details p {
   line-height: 1.2;
 }
 
+/* Galerie de témoignages (vidéos + captures) en mosaïque */
+.testimonials-gallery {
+  margin-top: 24px;
+  columns: 280px;
+  column-gap: 16px;
+}
+
+.testimonial-media-card {
+  break-inside: avoid;
+  margin: 0 0 16px;
+  border: 1px solid var(--line-light);
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255, 253, 248, 0.06);
+}
+
+.testimonial-media-card img,
+.testimonial-media-card video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.testimonial-media-card figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px 14px;
+}
+
+.tm-name {
+  color: rgba(255, 253, 248, 0.9);
+  font-weight: 750;
+  font-size: 0.92rem;
+}
+
+.tm-tag {
+  flex-shrink: 0;
+  color: rgba(185, 146, 82, 0.95);
+  border: 1px solid rgba(185, 146, 82, 0.4);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.7rem;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 .quote-card {
   border: 1px solid var(--line-light);
   border-radius: 8px;

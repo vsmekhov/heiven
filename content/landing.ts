@@ -236,6 +236,18 @@ export const landing = {
       "J'ai aidé des praticiens qui démarraient comme des praticiens déjà connus à gagner en visibilité, à remplir leur agenda, à faire connaître leur travail.",
     testimonialsItems: [],
     testimonialNote: "Voici ce qu'ils en disent.",
+    testimonials: [
+      { type: "video", src: "/assets/testimonial-clara-materne.mp4", name: "Clara Materne", label: "Témoignage vidéo" },
+      { type: "video", src: "/assets/testimonial-dr-coester.mp4", name: "Dr Coester", label: "Témoignage vidéo" },
+      { type: "image", src: "/assets/testimonial-jean-louis-falconetti.png", name: "Jean-Louis Falconetti", label: "Témoignage" },
+      { type: "image", src: "/assets/testimonial-alban-corot-statistiques.png", name: "Alban Corot", label: "Statistiques" },
+      { type: "image", src: "/assets/testimonial-alban-corot-02.png", name: "Alban Corot", label: "Témoignage" },
+      { type: "image", src: "/assets/testimonial-alban-diet-03.png", name: "Alban Corot", label: "Témoignage" },
+      { type: "image", src: "/assets/testimonial-camille-hermann.png", name: "Camille Hermann", label: "Témoignage" },
+      { type: "image", src: "/assets/testimonial-dr-gakou-01.png", name: "Dr Gakou", label: "Témoignage" },
+      { type: "image", src: "/assets/testimonial-dr-gakou-coaching.png", name: "Dr Gakou", label: "Coaching" },
+      { type: "image", src: "/assets/testimonial-dr-chareau-coaching.png", name: "Dr Chareau", label: "Coaching" }
+    ],
     ctas: [
       {
         label: "Voir les témoignages",
