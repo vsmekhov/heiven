@@ -1003,6 +1003,7 @@ details p {
   display: grid;
   min-width: 0;
   min-height: auto;
+  align-content: start;
   gap: 14px;
   padding: 20px;
 }

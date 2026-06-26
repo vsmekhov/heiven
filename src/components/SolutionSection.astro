@@ -22,8 +22,14 @@ const solutionHighlights = [
 
 const stepHighlights = [
   ["Étape 1 - Vous créez votre contenu."],
-  ["Étape 2 - Vous publiez depuis votre compte Instagram (et/ou Facebook) et vous ajoutez Heiven et Vaincre la Fatigue en collaboration."],
-  ["Étape 3 - Vos futurs patients vous découvrent."]
+  ["Étape 2 - Publication"],
+  ["Étape 3 - Découverte et engagement"]
+];
+
+const stepBodyHighlights = [
+  [],
+  ["Vous publiez depuis votre compte"],
+  ["Vos futurs patients vous découvrent."]
 ];
 ---
 
@@ -57,22 +63,12 @@ const stepHighlights = [
             <span>Étape {index + 1}</span>
           </div>
           <h3 set:html={emphasize(step.title, stepHighlights[index] ?? [])}></h3>
-          <p
-            set:html={emphasize(step.text, [
-              index === 0 ? "Mon guide de création de contenu, inclus dans votre accès" : "",
-              index === 0 ? "une structure éprouvée pour capter l'attention dès les trois premières secondes." : "",
-              index === 1 ? "Votre publication apparaît au même moment sur votre compte, sur Heiven Longévité et sur Vaincre la Fatigue." : "",
-              index === 2 ? "Ils visitent votre profil, ils s'abonnent, leur confiance grandit." : ""
-            ])}
-          ></p>
+          {step.paragraphs.map((para) => (
+            <p set:html={emphasize(para, stepBodyHighlights[index] ?? [])}></p>
+          ))}
         </article>
       ))}
     </div>
-
-    <p
-      class="section-intro method-outro"
-      set:html={emphasize(solution.methodOutro, ["sur trois comptes à la fois"])}
-    ></p>
 
     {actions.length ? (
       <div class="section-actions">
