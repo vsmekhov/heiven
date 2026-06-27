@@ -295,7 +295,7 @@ export const landing = {
       { image: "/assets/expert-gerard-garofalo.jpg", alt: "Dr Gérard Garofalo" },
       { image: "/assets/expert-amin-gasmi.jpg", alt: "Amin Gasmi" },
       { image: "/assets/expert-sandra-chareau.jpg", alt: "Dr Sandra Chareau", objectPosition: "58% 28%", scale: 1.9 },
-      { image: "/assets/expert-jeremy-barlow.jpg", alt: "Jérémy Barlow", objectPosition: "50% 30%", scale: 1.5 }
+      { image: "/assets/expert-jeremy-barlow.jpg", alt: "Jérémy Barlow", objectPosition: "50% 45%", scale: 2 }
     ],
     accessTitle: "CE CERCLE N'EST PAS OUVERT À TOUT LE MONDE",
     accessParagraphs: [
