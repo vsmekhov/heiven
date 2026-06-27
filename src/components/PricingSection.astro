@@ -134,7 +134,7 @@ const urgencyHighlights = [
           <h4>{plan.title}</h4>
           <p class="pricing-price" set:html={emphasize(plan.price, ["100 € / mois", "200 € / mois"])}></p>
           {plan.priceNote ? <p class="pricing-price-note">{plan.priceNote}</p> : null}
-          <p class="pricing-desc">{plan.description}</p>
+          <p class="pricing-desc" set:html={emphasize(plan.description, plan.descriptionBold ?? [])}></p>
           <ul class="feature-list">
             {plan.points.map((item) => (
               <li>

@@ -331,7 +331,8 @@ export const landing = {
         title: "MEMBRE FONDATEUR - engagement à l'année",
         price: "100 € / mois (praticiens de santé) - 200 € / mois (médecins)",
         priceNote: "pendant 10 mois - les 2 derniers sont offerts",
-        description: "Le même tarif mensuel, avec tous les avantages réservés aux fondateurs du Cercle.",
+        description: "Tout ce que comprend l'Essentiel, plus les avantages réservés aux fondateurs du Cercle :",
+        descriptionBold: ["Tout ce que comprend l'Essentiel"],
         points: [
           { text: "2 mois offerts sur l'année", bold: ["2 mois offerts"] },
           { text: "Placement prioritaire : vos publications passent en premier quand plusieurs membres publient le même jour", bold: ["Placement prioritaire"] },
