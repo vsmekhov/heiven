@@ -308,18 +308,19 @@ export const landing = {
       "Pour garantir ce niveau d'exigence, j'ai réuni un Comité des Experts qui dispose d'un droit de veto sur les admissions au Cercle Pro."
     ],
     offerTitle: "REJOIGNEZ LE CERCLE PRO",
-    offerIntro: "Un investissement dont le coût réel devient négatif dès votre premier patient. Deux façons de rejoindre le Cercle. Une seule limite : 50 places par cycle.",
+    offerIntro: "Un investissement dont le coût réel devient négatif dès votre premier patient.",
+    offerLimit: "Deux façons de rejoindre le Cercle. Une seule limite : 50 places par cycle.",
     plans: [
       {
         title: "ESSENTIEL - sans engagement",
-        price:
-          "99 € / mois (praticiens de santé) - 199 € / mois (médecins)",
+        price: "100 € / mois (praticiens de santé) - 200 € / mois (médecins)",
+        priceNote: "",
+        description: "Vous publiez sur Heiven, vous accédez à la communauté privée du Cercle et aux ateliers mensuels. Vous arrêtez quand vous voulez.",
         points: [
-          "Vous publiez sur Heiven, vous accédez à la communauté privée du Cercle et aux ateliers mensuels. Vous arrêtez quand vous voulez.",
-          "2 reels ou carrousels + 2 stories publiés chaque mois sur Heiven",
-          "Le guide complet de création de contenu et la bibliothèque de prompts",
-          "Les ateliers mensuels du Cercle",
-          "L'accès à la communauté privée Heiven Cercle Pro"
+          { text: "2 reels ou carrousels + 2 stories publiés chaque mois sur Heiven", bold: ["2 reels ou carrousels + 2 stories"] },
+          { text: "Le guide complet de création de contenu et la bibliothèque de prompts" },
+          { text: "Les ateliers mensuels du Cercle" },
+          { text: "L'accès à la communauté privée Heiven Cercle Pro" }
         ],
         cta: {
           label: "Devenir Membre",
@@ -327,14 +328,14 @@ export const landing = {
         }
       },
       {
-        title: "MEMBRE FONDATEUR - à l'année",
-        price:
-          "990 € (praticiens de santé) - 1 990 € (médecins)\nsoit 2 mois offerts",
+        title: "MEMBRE FONDATEUR - engagement à l'année",
+        price: "100 € / mois (praticiens de santé) - 200 € / mois (médecins)",
+        priceNote: "pendant 10 mois - les 2 derniers sont offerts",
+        description: "Le même tarif mensuel, avec tous les avantages réservés aux fondateurs du Cercle.",
         points: [
-          "Tout ce que comprend l'abonnement Essentiel, plus les avantages réservés aux fondateurs du Cercle.",
-          "2 mois offerts sur l'année",
-          "Placement prioritaire : vos publications passent en premier quand plusieurs membres publient le même jour",
-          "Tarif fondateur garanti pour toute la durée de votre abonnement",
+          { text: "2 mois offerts sur l'année", bold: ["2 mois offerts"] },
+          { text: "Placement prioritaire : vos publications passent en premier quand plusieurs membres publient le même jour", bold: ["Placement prioritaire"] },
+          { text: "Tarif fondateur garanti pour toute la durée de votre abonnement", bold: ["Tarif fondateur garanti"] }
         ],
         cta: {
           label: "Devenir Membre Fondateur",

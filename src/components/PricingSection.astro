@@ -125,37 +125,21 @@ const urgencyHighlights = [
     <div class="section-copy section-lede">
       <p class="eyebrow">Tarifs</p>
       <h3 class="chapter-title">{pricing.offerTitle}</h3>
-      <p class="section-intro">{pricing.offerIntro}</p>
+      <p class="section-intro offer-intro">{pricing.offerIntro}</p>
+      <p class="section-intro" set:html={emphasize(pricing.offerLimit, ["50 places par cycle."])}></p>
     </div>
     <div class="plan-grid">
       {pricing.plans.map((plan) => (
         <article class="pricing-plan">
           <h4>{plan.title}</h4>
-          <p class="pricing-price">{plan.price}</p>
+          <p class="pricing-price" set:html={emphasize(plan.price, ["100 € / mois", "200 € / mois"])}></p>
+          {plan.priceNote ? <p class="pricing-price-note">{plan.priceNote}</p> : null}
+          <p class="pricing-desc">{plan.description}</p>
           <ul class="feature-list">
-            {plan.points.map((item, index) => (
+            {plan.points.map((item) => (
               <li>
                 <Icon name="CircleCheck" class="list-icon" size={16} />
-                <span
-                  set:html={emphasize(
-                    item,
-                    plan.title.startsWith("ESSENTIEL")
-                      ? [
-                          index === 0 ? "Vous publiez sur Heiven, vous accédez à la communauté privée du Cercle et aux ateliers mensuels. Vous arrêtez quand vous voulez." : "",
-                          index === 1 ? "2 reels ou carrousels + 2 stories publiés chaque mois sur Heiven" : "",
-                          index === 2 ? "Le guide complet de création de contenu et la bibliothèque de prompts" : "",
-                          index === 3 ? "Les ateliers mensuels du Cercle" : "",
-                          index === 4 ? "L'accès à la communauté privée Heiven Cercle Pro" : ""
-                        ]
-                      : [
-                          index === 0 ? "Tout ce que comprend l'abonnement Essentiel, plus les avantages réservés aux fondateurs du Cercle." : "",
-                          index === 1 ? "2 mois offerts sur l'année" : "",
-                          index === 2 ? "Placement prioritaire" : "",
-                          index === 3 ? "Tarif fondateur garanti pour toute la durée de votre abonnement" : "",
-                          index === 4 ? "Paiement en 1, 2 ou 3 fois" : ""
-                        ]
-                  )}
-                ></span>
+                <span set:html={emphasize(item.text, item.bold ?? [])}></span>
               </li>
             ))}
           </ul>
