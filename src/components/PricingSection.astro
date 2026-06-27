@@ -104,13 +104,19 @@ const urgencyHighlights = [
 
       <div class="committee-mosaic">
         {pricing.committeeGallery.map((member) => (
-          <img
-            src={member.image}
-            alt={member.alt}
-            loading="lazy"
-            decoding="async"
-            style={member.objectPosition ? `object-position: ${member.objectPosition}` : undefined}
-          />
+          <div class="mosaic-cell">
+            <img
+              src={member.image}
+              alt={member.alt}
+              loading="lazy"
+              decoding="async"
+              style={[
+                member.objectPosition ? `object-position:${member.objectPosition}` : null,
+                member.scale ? `transform:scale(${member.scale})` : null,
+                member.scale && member.objectPosition ? `transform-origin:${member.objectPosition}` : null
+              ].filter(Boolean).join(";") || undefined}
+            />
+          </div>
         ))}
       </div>
   </div>

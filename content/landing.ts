@@ -186,11 +186,11 @@ export const landing = {
       { name: "Dr Georges Mouton", image: "/assets/expert-georges-mouton.jpg", alt: "Portrait du Dr Georges Mouton" },
       { name: "Rivka Dépaz", image: "/assets/expert-rivka-depaz.jpg", alt: "Portrait de Rivka Dépaz" },
       { name: "Dr Riadh Caid-Essebsi", image: "/assets/expert-riadh-caid-essebsi.jpg", alt: "Portrait du Dr Riadh Caid-Essebsi" },
-      { name: "Clara Materne", image: "/assets/expert-clara-materne.png", alt: "Portrait de Clara Materne" },
-      { name: "Christian Vélot", image: "/assets/expert-christian-velot.png", alt: "Portrait de Christian Vélot" },
+      { name: "Clara Materne", image: "/assets/expert-clara-materne.jpg", alt: "Portrait de Clara Materne" },
+      { name: "Christian Vélot", image: "/assets/expert-christian-velot.jpg", alt: "Portrait de Christian Vélot" },
       { name: "Dr Denys Coester", image: "/assets/expert-denys-coester.webp", alt: "Portrait du Dr Denys Coester" },
-      { name: "Dr Guénolé Addor", image: "/assets/expert-guenole-addor.png", alt: "Portrait du Dr Guénolé Addor" },
-      { name: "Camille Hermann", image: "/assets/expert-camille-hermann.png", alt: "Portrait de Camille Hermann", objectPosition: "50% 68%" }
+      { name: "Dr Guénolé Addor", image: "/assets/expert-guenole-addor.jpg", alt: "Portrait du Dr Guénolé Addor" },
+      { name: "Camille Hermann", image: "/assets/expert-camille-hermann.jpg", alt: "Portrait de Camille Hermann", objectPosition: "50% 68%" }
     ],
     featuredPeople: [
       {
@@ -237,13 +237,13 @@ export const landing = {
     testimonialsItems: [],
     testimonialNote: "Voici ce qu'ils en disent.",
     testimonials: [
-      { type: "video", src: "/assets/testimonial-clara-materne.mp4", name: "Clara Materne", label: "Témoignage vidéo" },
       { type: "video", src: "/assets/testimonial-dr-coester.mp4", name: "Dr Denys Coester", label: "Témoignage vidéo" },
-      { type: "image", src: "/assets/testimonial-jean-louis-falconetti.png", name: "Jean-Louis Falconetti", label: "Témoignage" },
+      { type: "video", src: "/assets/testimonial-camille-hermann.mp4", name: "Camille Hermann", label: "Témoignage vidéo" },
+      { type: "video", src: "/assets/testimonial-clara-materne.mp4", name: "Clara Materne", label: "Témoignage vidéo" },
+      { type: "image", src: "/assets/testimonial-jean-louis-falconetti.jpg", name: "Jean-Louis Falconetti", label: "Témoignage" },
       { type: "image", src: "/assets/testimonial-alban-corot-statistiques.png", name: "Alban Corot", label: "Statistiques" },
       { type: "image", src: "/assets/testimonial-alban-corot-02.png", name: "Alban Corot", label: "Témoignage" },
-      { type: "image", src: "/assets/testimonial-alban-diet-03.png", name: "Alban Corot", label: "Témoignage" },
-      { type: "image", src: "/assets/testimonial-camille-hermann.png", name: "Camille Hermann", label: "Témoignage" },
+      { type: "image", src: "/assets/testimonial-alban-diet-03.jpg", name: "Alban Corot", label: "Témoignage" },
       { type: "image", src: "/assets/testimonial-dr-gakou-01.png", name: "Dr Valérie Gakou", label: "Témoignage" },
       { type: "image", src: "/assets/testimonial-dr-gakou-coaching.png", name: "Dr Valérie Gakou", label: "Coaching" }
     ],
@@ -272,7 +272,7 @@ export const landing = {
     committeeMembers: [
       { name: "Dr Alain Butnaru", role: "spécialiste de la micronutrition" },
       { name: "Dr Isabelle Meurgey", role: "spécialiste de la micronutrition et de la génomique" },
-      { name: "Dr Nicolas Dedieu, PharmD", role: "" },
+      { name: "Dr Nicolas Dedieu, PharmD,", role: "spécialiste des troubles digestifs et de la santé du microbiote" },
       { name: "Dr Jenny Becam", role: "médecin biologiste" },
       { name: "Dr Laurent Fogel", role: "spécialiste de la micronutrition" },
       { name: "Christian Boyer, PhD", role: "docteur en biologie, santé et nutrition" },
@@ -286,6 +286,7 @@ export const landing = {
     committeeGallery: [
       { image: "/assets/expert-alain-butnaru.jpg", alt: "Dr Alain Butnaru" },
       { image: "/assets/expert-isabelle-meurgey.jpg", alt: "Dr Isabelle Meurgey" },
+      { image: "/assets/expert-nicolas-dedieu.jpg", alt: "Dr Nicolas Dedieu" },
       { image: "/assets/expert-jenny-becam.jpg", alt: "Dr Jenny Becam" },
       { image: "/assets/expert-laurent-fogel.jpg", alt: "Dr Laurent Fogel" },
       { image: "/assets/expert-christian-boyer.jpg", alt: "Christian Boyer" },
@@ -293,8 +294,8 @@ export const landing = {
       { image: "/assets/expert-julie-pradines.avif", alt: "Julie Pradines" },
       { image: "/assets/expert-gerard-garofalo.jpg", alt: "Dr Gérard Garofalo" },
       { image: "/assets/expert-amin-gasmi.jpg", alt: "Amin Gasmi" },
-      { image: "/assets/expert-sandra-chareau.webp", alt: "Dr Sandra Chareau" },
-      { image: "/assets/expert-jeremy-barlow.jpg", alt: "Jérémy Barlow" }
+      { image: "/assets/expert-sandra-chareau.jpg", alt: "Dr Sandra Chareau", objectPosition: "58% 28%", scale: 1.9 },
+      { image: "/assets/expert-jeremy-barlow.jpg", alt: "Jérémy Barlow", objectPosition: "50% 30%", scale: 1.5 }
     ],
     accessTitle: "CE CERCLE N'EST PAS OUVERT À TOUT LE MONDE",
     accessParagraphs: [

@@ -935,10 +935,15 @@ details p {
   overflow: hidden;
 }
 
+.mosaic-cell {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
 .committee-mosaic img {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 100%;
   object-fit: cover;
 }
 
