@@ -26,7 +26,7 @@ export const landing = {
   },
   cta: {
     primary: {
-      label: "J'accède au Heiven Cercle Pro",
+      label: "Je postule au Cercle Pro",
       href: "https://tally.so/r/Y5ed6W",
       ariaLabel: "Ouvrir le formulaire de candidature Heiven Cercle Pro"
     },
@@ -41,7 +41,7 @@ export const landing = {
       "Rejoignez le Heiven Cercle Pro et faites découvrir votre expertise à plus de 300 000 personnes qui cherchent un professionnel de santé intégrative et fonctionnelle - et transformez cette visibilité en nouveaux patients.",
     cta: {
       primary: {
-        label: "J'accède au Heiven Cercle Pro",
+        label: "Je postule au Cercle Pro",
         href: "https://tally.so/r/Y5ed6W",
         ariaLabel: "Candidater au Cercle Pro"
       },
@@ -55,7 +55,7 @@ export const landing = {
       youtubeId: "evIQnAMsPjE"
     },
     visualImages: [
-      { src: "/assets/expert-garence-nageon.jpg", alt: "Portrait d'une experte Heiven" },
+      { src: "/assets/expert-garence-naigeon.jpg", alt: "Portrait d'une experte Heiven" },
       { src: "/assets/expert-gerard-garofalo.jpg", alt: "Portrait d'un expert Heiven" },
       { src: "/assets/expert-jenny-becam.jpg", alt: "Portrait d'une experte Heiven" },
       { src: "/assets/expert-amin-gasmi.jpg", alt: "Portrait d'un expert Heiven" },
@@ -91,12 +91,7 @@ export const landing = {
       "Et elle ne vous trouve pas.",
       "Chaque jour sans visibilité est une double perte. Pour elle, sa santé. Pour vous, votre activité."
     ],
-    ctas: [
-      {
-        label: "J'accède au Heiven Cercle Pro",
-        href: "https://tally.so/r/Y5ed6W"
-      }
-    ]
+    ctas: []
   },
   solution: {
     eyebrow: "",
@@ -155,7 +150,7 @@ export const landing = {
     ],
     ctas: [
       {
-        label: "J'accède au Heiven Cercle Pro",
+        label: "Je postule au Cercle Pro",
         href: "https://tally.so/r/Y5ed6W"
       }
     ]
@@ -177,7 +172,7 @@ export const landing = {
       { name: "Julie Pradines", image: "/assets/expert-julie-pradines.avif", alt: "Portrait de Julie Pradines" },
       { name: "Dr Alain Butnaru", image: "/assets/expert-alain-butnaru.jpg", alt: "Portrait du Dr Alain Butnaru" },
       { name: "Dr Aurélien Nunez", image: "/assets/expert-dr-nunez.jpg", alt: "Portrait du Dr Aurélien Nunez" },
-      { name: "Garence Nageon", image: "/assets/expert-garence-nageon.jpg", alt: "Portrait de Garence Nageon", objectPosition: "50% 8%" },
+      { name: "Garence Naigeon", image: "/assets/expert-garence-naigeon.jpg", alt: "Portrait de Garence Naigeon", objectPosition: "50% 8%" },
       { name: "Isabelle Meurgey", image: "/assets/expert-isabelle-meurgey.jpg", alt: "Portrait d'Isabelle Meurgey" },
       { name: "Professeur Vincenzo Castronovo", image: "/assets/expert-vincenzo-castronovo.jpg", alt: "Portrait du Professeur Vincenzo Castronovo" },
       { name: "Professeur Philippe Humbert", image: "/assets/expert-philippe-humbert.webp", alt: "Portrait du Professeur Philippe Humbert" },
@@ -276,7 +271,7 @@ export const landing = {
       { name: "Dr Jenny Becam", role: "médecin biologiste" },
       { name: "Dr Laurent Fogel", role: "spécialiste de la micronutrition" },
       { name: "Christian Boyer, PhD", role: "docteur en biologie, santé et nutrition" },
-      { name: "Garence Naigeon", role: "diététicienne-nutritionniste, DIUE MAPS" },
+      { name: "Garence Naigeon", role: "diététicienne-nutritionniste, DIU MAPS" },
       { name: "Julie Pradines", role: "infirmière et naturopathe, experte en micronutrition" },
       { name: "Dr Gérard Garofalo", role: "spécialiste de la micronutrition" },
       { name: "Amin Gasmi, PhD", role: "physiologiste, micronutritionniste" },
@@ -290,7 +285,7 @@ export const landing = {
       { image: "/assets/expert-jenny-becam.jpg", alt: "Dr Jenny Becam" },
       { image: "/assets/expert-laurent-fogel.jpg", alt: "Dr Laurent Fogel" },
       { image: "/assets/expert-christian-boyer.jpg", alt: "Christian Boyer" },
-      { image: "/assets/expert-garence-nageon.jpg", alt: "Garence Naigeon", objectPosition: "50% 8%" },
+      { image: "/assets/expert-garence-naigeon.jpg", alt: "Garence Naigeon", objectPosition: "50% 8%" },
       { image: "/assets/expert-julie-pradines.avif", alt: "Julie Pradines" },
       { image: "/assets/expert-gerard-garofalo.jpg", alt: "Dr Gérard Garofalo" },
       { image: "/assets/expert-amin-gasmi.jpg", alt: "Amin Gasmi" },
@@ -376,7 +371,7 @@ export const landing = {
     ],
     ctas: [
       {
-        label: "J'accède au Heiven Cercle Pro",
+        label: "Je postule au Cercle Pro",
         href: "https://tally.so/r/Y5ed6W"
       }
     ]
@@ -422,7 +417,7 @@ export const landing = {
     ],
     ctas: [
       {
-        label: "J'accède au Heiven Cercle Pro",
+        label: "Je postule au Cercle Pro",
         href: "https://tally.so/r/Y5ed6W"
       }
     ]
@@ -432,7 +427,7 @@ export const landing = {
     title:
       "Quelque part en ce moment, votre prochain patient vous cherche.\nIl a essayé la médecine allopathique. Il n'a pas trouvé de réponses. Il cherche quelqu'un qui pratique l'approche intégrative et fonctionnelle, qui prend le temps nécessaire d'explorer le terrain et de remonter aux causes profondes.\nIl cherche quelqu'un comme vous.",
     text: "50 places seulement pour ce premier cycle.",
-    buttonLabel: "J'accède au Heiven Cercle Pro"
+    buttonLabel: "Je postule au Cercle Pro"
   },
   footer: {
     text: "Heiven Cercle Pro",
