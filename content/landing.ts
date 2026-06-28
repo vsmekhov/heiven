@@ -368,10 +368,11 @@ export const landing = {
       "C'est la pensée la plus naturelle du monde en juin. Et c'est exactement pour ça que je veux vous arrêter une minute.",
       "Réserver votre place aujourd'hui ne veut pas dire publier demain. Vous bloquez l'une des 50 places de ce cycle - et vous commencez à publier quand vous le sentez. En juillet, en août, ou seulement à la rentrée. C'est vous qui décidez.",
       "Mais réfléchissez à ce que l'été vous offre vraiment.",
-      "Juillet et août, c'est le seul moment de l'année où vous avez le temps. Le temps de lire le guide, de préparer vos contenus tranquillement, de prendre le coup de main sans la pression de septembre. Et c'est aussi le moment où les gens flânent sur Instagram, plus disponibles, plus réceptifs qu'à n'importe quel autre moment de l'année.",
-      "Surtout : vous savez comme moi que septembre est LE grand rendez-vous de la santé. C'est là que les gens reprennent leur routine, se remettent au sport, à la nutrition, prennent enfin le rendez-vous qu'ils repoussaient. C'est la rentrée des bonnes résolutions.",
-      "Imaginez arriver à ce moment-là avec une longueur d'avance. Pendant que vos confrères se diront « il faudrait que je m'y mette », vous, vous serez déjà installé sur Heiven, déjà vu, déjà reconnu - avec un agenda qui se remplit pendant qu'ils réfléchissent encore.",
-      "Les 50 places se prennent maintenant. Le bon moment pour les remplir, c'est tout l'été."
+      "Juillet et août, c'est le seul moment de l'année où vous avez vraiment le temps. Le temps de lire le guide, de préparer vos contenus tranquillement, d'apprendre à produire différents formats et de les tester - sans la pression de septembre.",
+      "Et l'été, votre audience aussi a plus de temps : on consulte son téléphone plus longuement, plus souvent, dans un moment plus détendu de l'année.",
+      "Surtout : vous savez comme moi que septembre est LE grand rendez-vous de la santé. C'est là que les gens reprennent leur routine, se remettent au sport, à la nutrition, prennent enfin le rendez-vous santé qu'ils repoussaient depuis le printemps. C'est la rentrée des bonnes résolutions.",
+      "Imaginez arriver à ce moment-là avec une longueur d'avance. Pendant que vos confrères se diront « il faudrait que je m'y mette », vous serez déjà installé sur Heiven, déjà vu, déjà reconnu - avec un agenda qui se remplit pendant qu'ils réfléchissent encore.",
+      "Les 50 places de ce cycle partent maintenant. Réservez la vôtre aujourd'hui, et laissez l'été travailler pour vous."
     ],
     ctas: [
       {
