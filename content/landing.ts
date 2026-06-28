@@ -376,10 +376,6 @@ export const landing = {
     ],
     ctas: [
       {
-        label: "Devenir Membre",
-        href: "https://tally.so/r/Y5ed6W"
-      },
-      {
         label: "J'accède au Heiven Cercle Pro",
         href: "https://tally.so/r/Y5ed6W"
       }
@@ -428,10 +424,6 @@ export const landing = {
       {
         label: "J'accède au Heiven Cercle Pro",
         href: "https://tally.so/r/Y5ed6W"
-      },
-      {
-        label: "Voir les tarifs",
-        href: "#offre"
       }
     ]
   },
@@ -439,12 +431,8 @@ export const landing = {
     eyebrow: "",
     title:
       "Quelque part en ce moment, votre prochain patient vous cherche.\nIl a essayé la médecine allopathique. Il n'a pas trouvé de réponses. Il cherche quelqu'un qui pratique l'approche intégrative et fonctionnelle, qui prend le temps nécessaire d'explorer le terrain et de remonter aux causes profondes.\nIl cherche quelqu'un comme vous.",
-    text: "Vos candidatures sont examinées sous 48 heures ouvrées. 50 places au premier cycle.",
-    buttonLabel: "J'accède au Heiven Cercle Pro",
-    secondary: {
-      label: "Voir l'offre complète",
-      href: "#offre"
-    }
+    text: "50 places seulement pour ce premier cycle.",
+    buttonLabel: "J'accède au Heiven Cercle Pro"
   },
   footer: {
     text: "Heiven Cercle Pro",

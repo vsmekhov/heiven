@@ -1247,6 +1247,10 @@ details p {
   gap: 10px;
 }
 
+.final-note {
+  font-style: italic;
+}
+
 .final-cta p:not(.eyebrow) {
   max-width: 680px;
   color: rgba(255, 253, 248, 0.78);

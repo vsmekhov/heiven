@@ -11,8 +11,6 @@ const finalTitleHighlights = [
   ["Quelque part en ce moment, votre prochain patient vous cherche."],
   ["Il cherche quelqu'un comme vous."]
 ];
-
-const finalTextHighlights = ["50 places au premier cycle."];
 ---
 
 <section class="final-cta" id="final" aria-labelledby="final-cta-title">
@@ -24,7 +22,7 @@ const finalTextHighlights = ["50 places au premier cycle."];
         <p set:html={emphasize(paragraph, finalTitleHighlights[index + 1] ?? [])}></p>
       ))}
     </div>
-    <p set:html={emphasize(finalCta.text, finalTextHighlights)}></p>
+    <p class="final-note">{finalCta.text}</p>
     <a class="button button-primary" href={cta.primary.href} target="_blank" rel="noreferrer" aria-label={cta.primary.ariaLabel}>
       {finalCta.buttonLabel}
       <Icon name="ArrowRight" class="button-icon" size={17} />
