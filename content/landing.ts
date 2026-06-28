@@ -365,7 +365,7 @@ export const landing = {
     ],
     urgencyTitle: "« JE VERRAI ÇA À LA RENTRÉE »",
     urgencyParagraphs: [
-      "C'est la pensée la plus naturelle du monde en juin. Et c'est exactement pour ça que je veux vous arrêter une minute.",
+      "C'est la pensée la plus naturelle du monde. Et c'est exactement pour ça que je veux vous arrêter une minute.",
       "Réserver votre place aujourd'hui ne veut pas dire publier demain. Vous bloquez l'une des 50 places de ce cycle - et vous commencez à publier quand vous le sentez. En juillet, en août, ou seulement à la rentrée. C'est vous qui décidez.",
       "Mais réfléchissez à ce que l'été vous offre vraiment.",
       "Juillet et août, c'est le seul moment de l'année où vous avez vraiment le temps. Le temps de lire le guide, de préparer vos contenus tranquillement, d'apprendre à produire différents formats et de les tester - sans la pression de septembre.",
