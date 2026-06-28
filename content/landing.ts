@@ -307,7 +307,7 @@ export const landing = {
     offerLimit: "Deux façons de rejoindre le Cercle. Une seule limite : 50 places par cycle.",
     plans: [
       {
-        title: "ESSENTIEL - sans engagement",
+        title: "MEMBRE ESSENTIEL - sans engagement",
         price: "100 € / mois (praticiens de santé) - 200 € / mois (médecins)",
         priceNote: "",
         description: "Vous publiez sur Heiven, vous accédez à la communauté privée du Cercle et aux ateliers mensuels. Vous arrêtez quand vous voulez.",
@@ -318,12 +318,13 @@ export const landing = {
           { text: "L'accès à la communauté privée Heiven Cercle Pro" }
         ],
         cta: {
-          label: "Devenir Membre",
+          label: "Devenir Membre Essentiel",
           href: "https://tally.so/r/Y5ed6W"
         }
       },
       {
         title: "MEMBRE FONDATEUR - engagement à l'année",
+        recommended: true,
         price: "100 € / mois (praticiens de santé) - 200 € / mois (médecins)",
         priceNote: "pendant 10 mois - les 2 derniers sont offerts",
         description: "Tout ce que comprend l'Essentiel, plus les avantages réservés aux fondateurs du Cercle :",

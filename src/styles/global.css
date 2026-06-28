@@ -752,6 +752,7 @@ details p {
 }
 
 .pricing-plan {
+  position: relative;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255, 253, 248, 0.96);
@@ -760,6 +761,29 @@ details p {
   gap: 14px;
   padding: 22px;
   box-shadow: 0 1px 0 rgba(255, 253, 248, 0.82) inset;
+}
+
+.pricing-plan-featured {
+  border: 1.5px solid var(--gold);
+}
+
+.plan-badge {
+  position: absolute;
+  top: -11px;
+  left: 22px;
+  background: var(--gold);
+  color: var(--ink);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  padding: 3px 11px;
+  border-radius: 999px;
+}
+
+.pricing-plan .button {
+  width: 100%;
+  justify-content: center;
+  align-self: end;
 }
 
 .pricing-plan h4 {

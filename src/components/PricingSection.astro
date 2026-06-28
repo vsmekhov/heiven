@@ -143,7 +143,8 @@ const urgencyHighlights = [
     </div>
     <div class="plan-grid">
       {pricing.plans.map((plan) => (
-        <article class="pricing-plan">
+        <article class={plan.recommended ? "pricing-plan pricing-plan-featured" : "pricing-plan"}>
+          {plan.recommended ? <span class="plan-badge">RECOMMANDÉ</span> : null}
           <h4>{plan.title}</h4>
           <p class="pricing-price" set:html={emphasize(plan.price, ["100 € / mois", "200 € / mois"])}></p>
           {plan.priceNote ? <p class="pricing-price-note">{plan.priceNote}</p> : null}
