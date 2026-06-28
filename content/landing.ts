@@ -347,13 +347,21 @@ export const landing = {
     pricingNote: "Tous les tarifs sont hors taxes. Une facture est émise à chaque paiement - directement déductible dans votre comptabilité professionnelle.",
     trustTitle: "POURQUOI JE NE PROMETS PAS DE MIRACLES - ET POURQUOI ÇA VA MARCHER QUAND MÊME",
     trustParagraphs: [
-      "Je ne vais pas vous promettre la lune. Je ne contrôle pas votre charisme devant la caméra, ni la qualité de votre message. Ça, c'est votre part.",
-      "Ma part, c'est de vous donner ce qu'aucune autre plateforme francophone ne peut vous offrir : votre expertise, quatre fois par mois, devant plus de 300 000 personnes qui cherchent exactement un praticien comme vous.",
-      "Faites le calcul une dernière fois. Quatre publications par mois, sur quelques mois, ce sont des dizaines d'occasions d'être vu, d'être reconnu, d'inspirer confiance. Les gens ont besoin de croiser un visage plusieurs fois avant de lui faire confiance - c'est documenté, et c'est exactement ce que des publications régulières construisent.",
-      "Honnêtement : je vois mal comment, en publiant régulièrement, vous ne feriez pas venir au moins un nouveau patient. Et un seul suffit à rembourser votre investissement.",
+      "Je ne vais pas vous vendre du rêve. Personne ne peut garantir un nombre exact de nouveaux abonnés ou de nouveaux patients - ce serait malhonnête.",
+      "Ce que je peux vous garantir, c'est tout le reste.",
+      "Pour démarrer, je mets à votre disposition un guide complet : des stratégies, des conseils concrets, des prompts - ceux que j'utilise, ceux que j'affine en permanence en observant ce qui marche vraiment dans notre milieu. Je vous partage tout ce que j'ai appris, et tout ce que je continue d'apprendre.",
+      "Chaque mois, j'organise des ateliers où j'invite d'autres praticiens et des spécialistes des réseaux. On vous coache pour que vos contenus percent, que votre audience grandisse, et que vous sachiez la convertir en patients ou en clients.",
+      "Et nos échanges vivent sur une plateforme privée où, à tout moment, vous pouvez poser vos questions, échanger, apprendre de ceux qui avancent à vos côtés.",
+      "Vous n'êtes plus seul dans le bruit des réseaux. On perce plus facilement à plusieurs - de nombreuses collaborations le prouvent déjà.",
+      "Votre réussite est ma réussite.",
+      "Et surtout, je vous donne ce qu'aucun consultant Instagram, aucune autre plateforme ne peut vous offrir : votre expertise, quatre fois par mois, devant plus de 300 000 personnes qui cherchent exactement un praticien comme vous.",
+      "Quatre publications par mois, sur quelques mois, ce sont des centaines, voire des milliers d'occasions d'être vu, d'être reconnu, d'inspirer confiance. Car pour faire confiance, la plupart des gens ont besoin d'une chose : avoir déjà vu votre visage passer, plusieurs fois, ou vous avoir entendu recommander.",
+      "Vos publications sur Heiven cochent ces deux cases - c'est exactement ce que des publications régulières construisent.",
+      "Je vois mal comment, en publiant régulièrement et en jouant le jeu, vous ne feriez pas venir de nouveaux patients.",
+      "Et un seul suffirait largement à rembourser votre investissement.",
       "Le reste ne dépend que d'une chose.",
-      "Que vous soyez, tout simplement, qui vous êtes déjà : un praticien passionné, engagé pour la santé de vos patients, qui aime transmettre et faire de chacun un véritable acteur de sa santé.",
-      "C'est exactement ce que notre communauté attend."
+      "Que vous soyez, tout simplement, qui vous êtes déjà : un praticien passionné, engagé pour la santé de vos patients, qui aime transmettre et soigner.",
+      "C'est exactement ce que notre communauté attend de vous."
     ],
     urgencyTitle: "« JE VERRAI ÇA À LA RENTRÉE »",
     urgencyParagraphs: [
