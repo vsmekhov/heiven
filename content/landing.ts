@@ -264,8 +264,8 @@ export const landing = {
       "C'est ce qui garantit que les patients qui vous découvrent ici savent qu'ils peuvent vous faire confiance."
     ],
     committeeMembers: [
-      { name: "Dr Alain Butnaru", role: "spécialiste de la micronutrition" },
-      { name: "Dr Isabelle Meurgey", role: "spécialiste de la micronutrition et de la génomique" },
+      { name: "Alain Butnaru,", role: "médecin fonctionnel, spécialiste de la micronutrition" },
+      { name: "Isabelle Meurgey,", role: "médecin fonctionnel, spécialiste de la micronutrition et de la génomique" },
       { name: "Dr Nicolas Dedieu, PharmD,", role: "spécialiste des troubles digestifs et de la santé du microbiote" },
       { name: "Dr Jenny Becam", role: "médecin biologiste" },
       { name: "Dr Laurent Fogel", role: "spécialiste de la micronutrition" },
