@@ -77,7 +77,7 @@ const testimonialHighlights = [
           {experts.testimonials.map((item) => (
             <figure class="testimonial-media-card">
               {item.type === "video" ? (
-                <video src={item.src} controls preload="metadata" playsinline></video>
+                <video src={item.src} poster={item.src.replace("/assets/", "/assets/poster-").replace(".mp4", ".jpg")} controls preload="metadata" playsinline></video>
               ) : (
                 <img src={item.src} alt={`Témoignage de ${item.name}`} loading="lazy" decoding="async" />
               )}
