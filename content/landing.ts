@@ -296,7 +296,7 @@ export const landing = {
       "Le Heiven Cercle Pro n'est pas un annuaire ouvert. Et c'est précisément ce qui le rend précieux.",
       "Nous accueillons un nombre limité de praticiens par cycle - pour que chaque membre garde une vraie visibilité, et que l'audience ne soit jamais saturée.",
       "Pour être admis, vous réunissez deux conditions :",
-      "Une formation reconnue en santé fonctionnelle, intégrative ou micronutrition - DU, DFM, SIIN, La Nutrition Positive, Oreka, IFM, MAPS, DUMAA, CFNA ou cursus équivalent.",
+      "Une formation reconnue en santé fonctionnelle, intégrative ou micronutrition - un DU spécialisé, DIU MAPS, DFM, DUMAA, Mitochondrial Academy, SIIN, Oreka, La Nutrition Positive, IFM, CFNA ou cursus équivalent.",
       "Au moins six mois de pratique en prise en charge fonctionnelle. Parce qu'une formation, aussi solide soit-elle, ne remplace pas l'expérience du cabinet.",
       "Nous ne cherchons pas des influenceurs. Nous cherchons des praticiens passionnés, compétents et expérimentés, qui ont quelque chose à transmettre.",
       "Pour garantir ce niveau d'exigence, j'ai réuni un Comité des Experts qui dispose d'un droit de veto sur les admissions au Cercle Pro."
