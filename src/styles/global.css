@@ -379,7 +379,7 @@ h3 {
 
 .hero-video-card {
   width: 100%;
-  max-width: 620px;
+  max-width: 340px;
   align-self: center;
   border: 1px solid rgba(255, 253, 248, 0.22);
   border-radius: 8px;
@@ -394,16 +394,18 @@ h3 {
   width: 100%;
   overflow: hidden;
   border-radius: 6px;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 9 / 16;
   background: #0f1f1e;
 }
 
-.hero-video-frame iframe {
+.hero-video-frame iframe,
+.hero-video-frame video {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   border: 0;
+  object-fit: cover;
 }
 
 .hero-trust-list {

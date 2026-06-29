@@ -34,13 +34,13 @@ const isExternal = (href: string) => href.startsWith("http");
       <h1 id="hero-title" set:html={hero.title}></h1>
       <aside class="hero-video-card" aria-label={hero.video.title}>
         <div class="hero-video-frame">
-          <iframe
-            src={`https://www.youtube.com/embed/${hero.video.youtubeId}`}
+          <video
+            src={hero.video.src}
             title={hero.video.title}
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+            controls
+            playsinline
+            preload="metadata"
+          ></video>
         </div>
       </aside>
       <Icon name="TrendingUp" class="hero-mark" size={18} />

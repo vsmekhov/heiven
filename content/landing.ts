@@ -52,7 +52,7 @@ export const landing = {
     },
     video: {
       title: "Présentation du Heiven Cercle Pro",
-      youtubeId: "evIQnAMsPjE"
+      src: "/assets/hero-vsl.mp4"
     },
     visualImages: [
       { src: "/assets/expert-garence-naigeon.jpg", alt: "Portrait d'une experte Heiven" },
