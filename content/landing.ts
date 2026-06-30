@@ -235,9 +235,9 @@ export const landing = {
       { type: "video", src: "/assets/testimonial-camille-hermann.mp4", name: "Camille Hermann", label: "Témoignage vidéo" },
       { type: "video", src: "/assets/testimonial-clara-materne.mp4", name: "Clara Materne", label: "Témoignage vidéo" },
       { type: "image", src: "/assets/testimonial-jean-louis-falconetti.jpg", name: "Jean-Louis Falconetti", label: "Témoignage" },
-      { type: "image", src: "/assets/testimonial-alban-corot-statistiques.png", name: "Alban Corot", label: "Statistiques" },
-      { type: "image", src: "/assets/testimonial-alban-corot-02.png", name: "Alban Corot", label: "Témoignage" },
-      { type: "image", src: "/assets/testimonial-alban-diet-03.jpg", name: "Alban Corot", label: "Témoignage" },
+      { type: "image", src: "/assets/testimonial-alban-corot-statistiques.png", name: "Alban Colot", label: "Statistiques" },
+      { type: "image", src: "/assets/testimonial-alban-corot-02.png", name: "Alban Colot", label: "Témoignage" },
+      { type: "image", src: "/assets/testimonial-alban-diet-03.jpg", name: "Alban Colot", label: "Témoignage" },
       { type: "image", src: "/assets/testimonial-dr-gakou-01.png", name: "Dr Valérie Gakou", label: "Témoignage" },
       { type: "image", src: "/assets/testimonial-dr-gakou-coaching.png", name: "Dr Valérie Gakou", label: "Coaching" }
     ],
