@@ -38,7 +38,7 @@ export const landing = {
   hero: {
     title: "VOTRE AGENDA DEVRAIT ÊTRE PLEIN.<br>VOS RÉSEAUX DEVRAIENT LE REMPLIR.",
     subtitle:
-      "Rejoignez le Heiven Cercle Pro et faites découvrir votre expertise à plus de 300 000 personnes qui cherchent un professionnel de santé intégrative et fonctionnelle - et transformez cette visibilité en nouveaux patients.",
+      "Rejoignez le Heiven Cercle Pro et faites découvrir votre expertise à plus de 300 000 personnes qui cherchent un professionnel de santé intégrative et fonctionnelle, et transformez cette visibilité en nouveaux patients.",
     cta: {
       primary: {
         label: "Je postule au Cercle Pro",
@@ -69,7 +69,7 @@ export const landing = {
     paragraphs: [
       "Vous avez fait le travail. Votre agenda devrait être plein.",
       "Vous avez suivi les diplômes universitaires, les certifications, les congrès. Vous maîtrisez des approches fonctionnelles et intégratives que 95% des praticiens ne connaissent pas.",
-      "Vous prenez le temps d'investiguer, de chercher les causes profondes au lieu de poser un pansement sur les symptômes, de construire des protocoles sur mesure. Vos patients transforment leur santé grâce à vous - et reviennent au cabinet.",
+      "Vous prenez le temps d'investiguer, de chercher les causes profondes au lieu de poser un pansement sur les symptômes, de construire des protocoles sur mesure. Vos patients transforment leur santé grâce à vous, et reviennent au cabinet.",
       "Et pourtant, il reste des créneaux vides dans votre agenda.",
       "Ce n'est pas un problème de compétence. C'est un problème de visibilité.",
       "Souvent, vos futurs patients sont perdus. Non seulement ils sont en errance médicale, mais quand ils cherchent enfin un professionnel avec une approche différente, ils ne savent pas à qui faire confiance.",
