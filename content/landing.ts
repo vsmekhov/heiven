@@ -233,6 +233,7 @@ export const landing = {
     testimonials: [
       { type: "video", src: "/assets/testimonial-dr-coester.mp4", name: "Dr Denys Coester", label: "Témoignage vidéo" },
       { type: "video", src: "/assets/testimonial-camille-hermann.mp4", name: "Camille Hermann", label: "Témoignage vidéo" },
+      { type: "video", src: "/assets/testimonial-robin-mesnage.mp4", name: "Robin Mesnage", label: "Témoignage vidéo" },
       { type: "video", src: "/assets/testimonial-clara-materne.mp4", name: "Clara Materne", label: "Témoignage vidéo" },
       { type: "image", src: "/assets/testimonial-jean-louis-falconetti.jpg", name: "Jean-Louis Falconetti", label: "Témoignage" },
       { type: "image", src: "/assets/testimonial-alban-corot-statistiques.png", name: "Alban Colot", label: "Statistiques" },
