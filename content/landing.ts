@@ -126,7 +126,10 @@ export const landing = {
         title: "Découverte et engagement",
         paragraphs: [
           "Vos futurs patients vous découvrent. Ils visitent votre profil, ils s'abonnent, leur confiance grandit.",
-          "Ils viennent vous voir en cabinet, en visio, à un webinaire ou un atelier, ils téléchargent vos guides ou achètent vos livres."
+          "Ils viennent vous voir en cabinet, en visio, à un webinaire ou un atelier, ils téléchargent vos guides ou achètent vos livres.",
+          "Et surtout - ils parlent de vous. Ils partagent votre profil, vos posts, vos conseils avec leurs proches.",
+          "Parce que quand un professionnel les aide directement ou indirectement, les gens en parlent naturellement.",
+          "Et ce bouche-à-oreille, c'est la forme la plus puissante de viralité. Votre audience et votre patientèle grandissent, sans que vous ayez à acheter un seul euro de publicité."
         ]
       }
     ],
@@ -272,11 +275,11 @@ export const landing = {
       { name: "Dr Laurent Fogel", role: "spécialiste de la micronutrition" },
       { name: "Christian Boyer, PhD", role: "docteur en biologie, santé et nutrition" },
       { name: "Garence Naigeon", role: "diététicienne-nutritionniste, DIU MAPS" },
-      { name: "Julie Pradines", role: "infirmière et naturopathe, experte en micronutrition" },
+      { name: "Julie Pradines", role: "naturopathe, experte en micronutrition" },
       { name: "Dr Gérard Garofalo", role: "spécialiste de la micronutrition" },
       { name: "Amin Gasmi, PhD", role: "physiologiste, micronutritionniste" },
       { name: "Dr Sandra Chareau", role: "médecin généraliste formée en micronutrition" },
-      { name: "Jérémy Barlow", role: "naturopathe, président de la Société Française de Micronutrition Intégrative" }
+      { name: "Jérémy Barlow", role: "DE Infirmier, naturopathe, président de la Société Française de Micronutrition Intégrative" }
     ],
     committeeGallery: [
       { image: "/assets/expert-alain-butnaru.jpg", alt: "Dr Alain Butnaru" },
